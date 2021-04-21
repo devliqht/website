@@ -1,0 +1,38 @@
+/* All responsive CSS code will be placed here. */
+
+@media screen and (max-width: 1024px) /* Recommended width for phones. */ {
+    grid-display {
+        display: grid;
+        grid-template-columns: 0fr 1fr;
+        grid-template-rows: 0fr 2fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas:
+        "sidebar header"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page";
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    .firstpart {
+        padding-top: 100px;
+    }
+
+    .welcome_message {
+        min-width: 300px;
+    }
+
+    .navbar-flex > a {
+        display: none;
+    }
+
+    .liyue_intro h1 {
+        font-size: 75px;
+    } .liyue_intro p {
+        font-size: 20px;
+    }
+}

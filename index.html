@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Cabarrubias</title>
+        <link rel="stylesheet" href="css/page.css">
+        <link rel="stylesheet" href="css/keyframes.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/card.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <grid-display id="grid-display">
+            <header>
+                <div id="navbar-1" class="navbar-flex" for="toggle_always_on">
+                    <img class="responsive_sidebar_icon" src="assets/ic/sidebar.png" onclick="open_sidebar();">
+                    <a href=#firstpart class="hoverable" id="topnav">HOME</a>
+                    <a href=#characters class="hoverable" id="topnav">DETAILS</a>
+                    <a href=#about class="hoverable" id="topnav">ABOUT</a>
+                </div>
+            </header>
+            <sidebar id="sidebar">
+                <div id="navbar-2" class="sidebar-flex">
+                    <img class="closebtn" src="assets/ic/x.png" onclick="close_sidebar();">
+                    <a href="#firstpart" onclick="switch_win_type();">Home</a>
+                    <a href=#characters onclick="switch_win_type();">Characters</a>
+                </div>
+            </sidebar> 
+            <page id="page">
+                <div class="firstpart" id="firstpart">
+                    <div class="liyue_intro">
+                        <div class="card">
+                            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                          </div>
+                          <hr>
+                          <div class="padding"></div>
+                          <div class="intro_text">
+                          <p>Don Bosco Technical College</p>
+                          <h1>Matt Erron <br>Cabarrubias</h1>
+                        </div>
+                    </div>        
+                    </div>
+                </div>
+                <a name="characters">
+                    <div class="characters_section">
+                        <!--To be continued-->
+                    </div>
+                </a>
+                <a name="about">
+                    <div class="about_section">
+                        <!--To be continued-->
+                    </div>
+                </a>
+            </page>
+            <script src="js/main.js"></script>
+        </grid-display>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+:root {
+    --main: #6385B5;
+    --light: #C0C3E4;
+    --dark: #102041;
+    --lightdark: #353439;
+    --green: #3AA74C;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+grid-display {
+    display: grid;
+    grid-template-columns: 0fr 2fr;
+    grid-template-rows: 0fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "header header"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page"
+    "sidebar page";
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+sidebar {
+    grid-area: sidebar;
+    background: transparent;
+    transition: 0.5s;
+    justify-content: center;
+} 
+
+page {
+    grid-area: page;
+    overflow-y: scroll; 
+} .liyue_intro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 8%;
+} .liyue_intro > .intro_text   {
+    color: white;
+    font-size: 75px;
+    padding-top: 5%;
+    text-align: left;
+} .liyue_intro p {
+    color: white;
+    font-size: 30px;
+}
+
+.firstpart {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg/bg.jpg");
+    padding-top: 50px;
+    background-size: cover; 
+    min-width: 100%;
+} .characters_section {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightdark);
+    background-size: cover;
+    min-width: 100%;
+} .about_section {
+    margin: auto;
+    width: 100%;
+    height: 20%;
+    background-color: var(--main);
+    background-size: cover; 
+    min-width: 100%;
+}
+
+.padding {
+    padding: 20px;
+}
