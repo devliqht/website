@@ -69,4 +69,22 @@
     .navbar-flex > img.responsive_sidebar_icon {
         display: none;
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--lightdark); 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #D9AFD9;
+        background-image: linear-gradient(180deg, #D9AFD9 0%, #97D9E1 100%);
+        border-radius: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        filter: brightness(90%);       
+    }
 }

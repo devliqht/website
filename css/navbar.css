@@ -15,7 +15,7 @@
     display: none;
 } .navbar-flex:hover {
 } .navbar-flex > a {
-    padding-left: 35px;
+    padding-left: 45px;
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -137,4 +137,5 @@ i {
 i:hover {
     color: #97D9E1;
 }
+
 

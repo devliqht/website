@@ -1,7 +1,7 @@
 :root {
     --main: #6385B5;
     --light: #C0C3E4;
-    --dark: #273238;
+    --dark: #070607;
     --lightdark: #1A191C;
     --green: #3AA74C;
 }
@@ -55,7 +55,7 @@ page {
 } .intro > .intro_text   {
     color: white;
     font-size: 55px;
-    padding-top: 1%;
+    padding-top: 3%;
     text-align: left;
     transition: 0.4s;
     height: 50%;
@@ -84,7 +84,7 @@ page {
     margin: auto;
     width: 100%;
     height: 20%;
-    background-color: var(--dark);
+    background: var(--dark);
     background-size: cover; 
     min-width: 100%;
 }
