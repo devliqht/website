@@ -55,7 +55,6 @@ page {
 } .intro > .intro_text   {
     color: white;
     font-size: 55px;
-    padding-top: 3%;
     text-align: left;
     transition: 0.4s;
     height: 50%;

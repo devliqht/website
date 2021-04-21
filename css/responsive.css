@@ -58,6 +58,9 @@
     .navbar-flex > img.responsive_sidebar_icon {
         padding-left: 25px;
     }
+    .intro > .intro_text {
+        padding-top: 0%;
+    }
 }
 
 
@@ -86,5 +89,8 @@
 
     ::-webkit-scrollbar-thumb:hover {
         filter: brightness(90%);       
+    }
+    .intro > .intro_text {
+        padding-top: 3%;
     }
 }
