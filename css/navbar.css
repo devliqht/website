@@ -17,11 +17,11 @@
 } .navbar-flex > a {
     padding-left: 25px;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 20px;
     color: white;
     transition: 0.3s;
     font-weight:600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 } .navbar-flex > a.hoverable:hover {
     filter: drop-shadow(5px 5px 7px black);
 } .navbar-flex > a > img.genshin_logo {
