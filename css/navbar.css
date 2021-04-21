@@ -1,14 +1,13 @@
 .navbar-flex {
     display: flex;
     flex-direction: row;
-    height: 72px;
+    height: 92px;
     width: 100%;
     background: rgba(0,0,0,0);
     position: fixed;
     transition: 0.3s;
     overflow-x: hidden;
-    padding-top: 18px;
-    padding-left: 25px;
+    padding-top: 29px;
     -ms-overflow-style: none; 
     scrollbar-width: none;  
     z-index: 4;
@@ -22,10 +21,9 @@
     color: white;
     transition: 0.3s;
     font-weight:600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 } .navbar-flex > a.hoverable:hover {
-    color: #ECE5D8;
-    padding-right: 5px;
+    filter: drop-shadow(5px 5px 7px black);
 } .navbar-flex > a > img.genshin_logo {
     filter: drop-shadow(5px 5px 7px black);
     position: relative;
@@ -123,5 +121,12 @@
 
 .navbar-flex > img.responsive_sidebar_icon:hover {
     filter: drop-shadow(5px 5px 7px black);
+}
+
+.navbar-flex > a > .dbtc {
+    width: 100%;
+    min-width: 50px;
+    position: relative;
+    bottom: 43%;
 }
 

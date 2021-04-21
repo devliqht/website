@@ -1,6 +1,6 @@
 /* All responsive CSS code will be placed here. */
 
-@media screen and (max-width: 860px) /* Recommended width for phones. */ {
+@media screen and (max-width: 1024px) /* Recommended width for phones. */ {
     grid-display {
         display: grid;
         grid-template-columns: 0fr 1fr;
@@ -55,12 +55,18 @@
     .padding {
         display: none;
     }
+    .navbar-flex > img.responsive_sidebar_icon {
+        padding-left: 25px;
+    }
 }
 
 
 /*For only specific panels. */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
     .intro {
         padding-top: 8%;
+    }
+    .navbar-flex > img.responsive_sidebar_icon {
+        display: none;
     }
 }
