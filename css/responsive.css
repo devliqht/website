@@ -1,6 +1,6 @@
 /* All responsive CSS code will be placed here. */
 
-@media screen and (max-width: 1024px) /* Recommended width for phones. */ {
+@media screen and (max-width: 860px) /* Recommended width for phones. */ {
     grid-display {
         display: grid;
         grid-template-columns: 0fr 1fr;
@@ -30,9 +30,37 @@
         display: none;
     }
 
-    .liyue_intro h1 {
-        font-size: 75px;
-    } .liyue_intro p {
-        font-size: 20px;
+    .intro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    } .intro > .intro_text   {
+        color: white;
+        font-size: 55px;
+        text-align: center;
+    } .intro p {
+        color: white;
+        font-size: 30px;
+    } .intro hr {
+        display: none;
+    }
+    .card {
+        display: none;
+    }
+    .other_half {
+        display: none;
+    }
+    .padding {
+        display: none;
+    }
+}
+
+
+/*For only specific panels. */
+@media only screen and (min-width: 900px) {
+    .intro {
+        padding-top: 8%;
     }
 }
