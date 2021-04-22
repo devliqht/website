@@ -16,21 +16,29 @@
     display: none;
 } .navbar-flex:hover {
 } .navbar-flex > a {
-    padding-left: 45px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    transition: 0.3s;
-    font-weight: 600;
-    letter-spacing: 1px;
-    height: 50%;
-} .navbar-flex > a.hoverable:hover {
-    filter: drop-shadow(5px 5px 7px black);
-} .navbar-flex > a > img.genshin_logo {
-    filter: drop-shadow(5px 5px 7px black);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; 
+    display: inline-block;
     position: relative;
-    bottom: 30%;
-} 
+    margin-right: 29px;
+    font-size: 19px;
+    font-weight: 600;
+}
+.navbar-flex > a:after {    
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.navbar-flex > a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
 
 .selector-flex {
     width: 100%;
