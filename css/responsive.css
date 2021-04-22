@@ -64,6 +64,9 @@
     .dbtc {
         display: none;
     }
+    .navbar-flex {
+        flex-direction: row;
+    }
 }
 
 /*For only specific panels. */
