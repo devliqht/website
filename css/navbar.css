@@ -1,6 +1,6 @@
 .navbar-flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     height: 92px;
     width: 100%;
     background: rgba(0,0,0,0);
@@ -8,6 +8,7 @@
     transition: 0.3s;
     overflow-x: hidden;
     padding-top: 29px;
+    padding-right: 55px;
     -ms-overflow-style: none; 
     scrollbar-width: none;  
     z-index: 4;
@@ -124,11 +125,11 @@
     filter: drop-shadow(5px 5px 7px black);
 }
 
-.navbar-flex > a > .dbtc {
-    width: 100%;
+.dbtc {
+    position: fixed;
     min-width: 50px;
-    position: relative;
-    bottom: 80%;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 i {

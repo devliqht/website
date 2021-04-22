@@ -79,6 +79,13 @@ page {
     background-color: var(--lightdark);
     background-size: cover;
     min-width: 100%;
+} .details_section > h1.title_text {
+    color: white;
+    font-size: 55px;
+    transition: 0.4s;
+    height: 50%;
+    cursor: default;
+    padding: 5%;
 } .about_section {
     margin: auto;
     width: 100%;
