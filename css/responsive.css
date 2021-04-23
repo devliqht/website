@@ -22,6 +22,11 @@
     .welcome_message {
         min-width: 300px;
     }
+    .navbar-flex {
+        background: #202020;
+        height: 70px;
+        padding-top: 22px;
+    }
     .navbar-flex > a {
         display: none;
     }
@@ -51,7 +56,8 @@
         display: none;
     }
     .navbar-flex > img.responsive_sidebar_icon {
-        padding-left: 25px;
+        margin-left: 25px;
+        padding: 4px;
     }
     .intro > .intro_text {
         padding-top: 0%;
@@ -64,6 +70,15 @@
     }
     .intro p.clickable {
         font-size: 19px;
+    }
+    .details_wrapper {
+        flex-direction: column;
+    }
+    .details_section {
+        height: 200%;
+    }
+    .details_1, .details_2 {
+        padding-left: 1em;
     }
 }
 

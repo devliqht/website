@@ -147,12 +147,20 @@ page {
     background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
     border-radius: 10px;
 }
-.details_title {
+.details_1 {
     display: flex;
     flex-direction: column;
     position: relative;
     padding-left: 6em; padding-top: 6em;
 }
+
+.details_2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 6em; padding-top: 6em;
+}
+
 .title_text {
     color: white;
     font-size: 55px;
@@ -173,4 +181,8 @@ ul.details_ul {
     transition: 0.4s;
     cursor: default;
     padding-top: 1em;
+}
+
+.details_wrapper {
+    display: flex;
 }
