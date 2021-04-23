@@ -16,20 +16,15 @@
         width: 100vw;
         height: 100vh;
     }
-
-
     .firstpart {
         padding-top: 100px;
     }
-
     .welcome_message {
         min-width: 300px;
     }
-
     .navbar-flex > a {
         display: none;
     }
-
     .intro {
         display: flex;
         flex-direction: column;
@@ -38,7 +33,7 @@
         justify-content: center;
     } .intro > .intro_text   {
         color: white;
-        font-size: 55px;
+        font-size: 35px;
         text-align: center;
     } .intro p {
         color: white;
@@ -46,7 +41,7 @@
     } .intro hr {
         display: none;
     }
-    .card {
+    .intro .card {
         display: none;
     }
     .other_half {
@@ -67,9 +62,12 @@
     .navbar-flex {
         flex-direction: row;
     }
+    .intro p.clickable {
+        font-size: 19px;
+    }
 }
 
-/*For only specific panels. */
+/* Desktop Format */
 @media only screen and (min-width: 1024px) {
     .intro {
         padding-top: 3%;
@@ -79,7 +77,7 @@
     }
 
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 7px;
     }
 
     ::-webkit-scrollbar-track {
@@ -92,9 +90,6 @@
         border-radius: 15px;
     }
 
-    ::-webkit-scrollbar-thumb:hover {
-        filter: brightness(90%);       
-    }
     .intro > .intro_text {
         padding-top: 3%;
     }
