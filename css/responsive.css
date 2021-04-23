@@ -75,10 +75,14 @@
         flex-direction: column;
     }
     .details_section {
-        height: 200%;
+        height: 500%;
     }
     .details_1, .details_2 {
         padding-left: 1em;
+        min-width: 1px;
+    }
+    .details_img {
+        min-width: 350px;
     }
 }
 

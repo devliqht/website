@@ -72,7 +72,6 @@ page {
 
 .gradient_underline {
     color: #fff;
-    text-transform: uppercase;
     text-decoration: none; 
     display: inline-block;
     position: relative;
@@ -151,14 +150,16 @@ page {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-left: 6em; padding-top: 6em;
+    padding-left: 5em; padding-top: 6em;
+    min-width: 800px;
 }
 
 .details_2 {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-left: 6em; padding-top: 6em;
+    padding-left: 5em; padding-top: 6em;
+    min-width: 800px;
 }
 
 .title_text {
@@ -185,4 +186,11 @@ ul.details_ul {
 
 .details_wrapper {
     display: flex;
+}
+
+.details_img {
+    padding-top: 1em;
+    position: relative;
+    min-width: 700px;
+    width: 50%;
 }

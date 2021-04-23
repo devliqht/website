@@ -18,13 +18,12 @@
 } 
 .navbar-flex > a {
     color: #fff;
-    text-transform: uppercase;
     text-decoration: none; 
     display: inline-block;
     position: relative;
     margin-right: 29px;
     font-size: 19px;
-    font-weight: 600;
+    font-style: bold;
 }
 .navbar-flex > a:after {    
     content: "";
