@@ -1,6 +1,6 @@
 .timeline {
     position: relative;
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto;
 }
 .timeline::after {
@@ -39,7 +39,7 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1px) {
     .timeline::after {
         left: 31px;
     }
