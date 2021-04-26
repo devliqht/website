@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/timeline.css">
+        <link rel="stylesheet" href="css/util.css">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -19,7 +21,7 @@
     <body>
         <grid-display id="grid-display">
             <header>
-                <img src="assets/ic/dbtc.png" class="dbtc">
+               
                 <div id="navbar-1" class="navbar-flex">
                     <img class="responsive_sidebar_icon" src="assets/ic/sidebar.png" onclick="open_sidebar();"> 
                     <a href=#firstpart class="hoverable font--montserrat" id="topnav">Github</a>                      
@@ -39,14 +41,10 @@
             <page id="page">
                 <div class="firstpart" id="firstpart">
                     <div class="intro">
-                        <div class="card animate__animated animate__fadeInLeft animate__delay-1s"></div>
-                          <div class="padding"></div>
                           <div class="intro_text">
                           <div class="animate__animated animate__fadeInDown">
-                            <p onclick="location.href='https://github.com/mattportfolio/website'" class="clickable font--quicksand gradient_underline"><i class="fab fa-github"></i> View Source Code Here</p>
-                            <h1 class="font--montserrat">Matt Erron <br><div class="other_half">Cabarrubias.</div></h1>
+                            <h1 class="font--montserrat">Matt Erron<div class="other_half">Cabarrubias.</div></h1>
                           </div>
-                          <hr class="horizontal" style="width: 50%;">
                           <i class="fab fa-facebook-square fa-xs"></i>
                           <i class="fab fa-discord fa-xs"></i>
                           <i class="fab fa-instagram fa-xs"></i>
@@ -58,36 +56,57 @@
                 </div>
                 <a name="details">
                     <div class="details_section">
-                    <div class="details_wrapper">
-                        <div class="details_1">
+                    <div class="details_wrapper center_content">
+                        <div class="details_0">
                             <h1 class="title_text font--montserrat">Hello.</h1>
-                            <hr class="horizontal" style="width: 20%;">
-                            <p class="subtext-title font--quicksand">My name is Matt. Grade 9 Student <span class="gradient_text_color">code-enthusiast-whatever-you-call-it.</span><br></p>
-                            <ul class="details_ul font--quicksand" style="padding-left: 1em;">
-                                <li>My age is <span style="color: #97D9E1;">15.</span></li>
-                                <li>Born on <span style="color: #97D9E1;">September 5, 2005.</span></li>
-                                <li>My zodiac sign is <span style="color: #97D9E1;">Virgo.</span></li>
-                                <li>I identify as <span style="color: #97D9E1;">INFP personality.</span></li>
-                                <li>My sexuality is <span style="color: #97D9E1;">male and I am straight.</span></li>
-                            </ul>  
-                        
-                            <h1 class="title_text font--montserrat" style="padding-top: 2em;">Hobbies & Interests.</h1>
-                            <hr class="horizontal" style="width: 20%;">
-                            <p class="subtext-title font--quicksand">Everyone has hobbies and interests. No wonder I have some. Just saying.</p>
-                            <ul class="details_ul font--quicksand" style="padding-left: 1em;">
-                                <li>I listen to music often. I can't skip a day <span style="color: #97D9E1;">without listening to music.</span></li>
-                                <li>I play video games a lot. Specifically on <span style="color: #97D9E1;">Genshin Impact.</span></li>
-                                <li>When visiting websites, I always wonder how they execute it so I take <span style="color: #97D9E1;">inspiration.</span></li>
-                                <li>When I have the time and no schoolwork, I go do <span style="color: #97D9E1;">some biking.</span></li>
-                            </ul>  
-                        </div>
-                        <div class="details_2">
-                            <h1 class="title_text font--montserrat">My works.</h1>
-                            <hr class="horizontal" style="width: 20%;">
-                            <p class="subtext-title font--quicksand"> Genshin Impact website. Click <span style="color: #97D9E1;" class="gradient_underline" onclick="location.href='https://mattportfolio.github.io/liyue_matt/'">here.</span> <br>
-                           Astral Client website. Click <span style="color: #97D9E1;" class="gradient_underline" onclick="location.href='https://astralclient.net'">here.</span></p>
-                        </div>
-                        
+                            <div class="timeline" style="padding-top: 2em;">
+                                <div class="container left">
+                                  <div class="content">
+                                    <h2>Name</h2>
+                                    <p class="font--quicksand">My name is Matt Erron G. Cabarrubias. I live in the Philippines.</p>
+                                  </div>
+                                </div>
+                                <div class="container right">
+                                  <div class="content">
+                                    <h2>Age</h2>
+                                    <p class="font--quicksand">My age is 15.</p>
+                                  </div>
+                                </div>
+                                <div class="container left">
+                                  <div class="content">
+                                    <h2>Personality</h2>
+                                    <p class="font--quicksand">I inherit the INFP personality. I'm an introverted person in the outside, but extroverted to my close friends. I am a mediator and a critical thinker.</p>
+                                  </div>
+                                </div>
+                                <div class="container right">
+                                  <div class="content">
+                                    <h2>Sexuality</h2>
+                                    <p class="font--quicksand">My sexuality is straight and I am a male. I respect other people regardless of your sexuality. I am an open minded person.</p>
+                                  </div>
+                                </div>
+                                <div class="container left">
+                                  <div class="content">
+                                    <h2>Zodiac Sign</h2>
+                                    <p class="font--quicksand">My birthday is on September 5, 2005 and I have the Virgo zodiac sign.</p>
+                                  </div>
+                                </div>                
+                        </div>       
+                    </div>
+                    <div class="details_1">            
+                        <h1 class="title_text font--montserrat" style="padding-top: 2em;">Hobbies & Interests.</h1>
+                        <hr class="horizontal" style="width: 20%;">
+                        <p class="subtext-title font--quicksand">Everyone has hobbies and interests. No wonder I have some. Just saying.</p>
+                        <ul class="details_ul font--quicksand" style="padding-left: 1em;">
+                            <li>I listen to music often. I can't skip a day <span style="color: #97D9E1;">without listening to music.</span></li>
+                            <li>I play video games a lot. Specifically on <span style="color: #97D9E1;">Genshin Impact.</span></li>
+                            <li>When visiting websites, I always wonder how they execute it so I take <span style="color: #97D9E1;">inspiration.</span></li>
+                            <li>When I have the time and no schoolwork, I go do <span style="color: #97D9E1;">some biking.</span></li>
+                        </ul>  
+                        <h1 class="title_text font--montserrat" style="padding-top: 2em;">My works.</h1>
+                        <hr class="horizontal" style="width: 20%;">
+                        <p class="subtext-title font--quicksand"> Genshin Impact website. Click <span style="color: #97D9E1;" class="gradient_underline" onclick="location.href='https://mattportfolio.github.io/liyue_matt/'">here.</span> <br>
+                        Astral Client website. Click <span style="color: #97D9E1;" class="gradient_underline" onclick="location.href='https://astralclient.net'">here.</span></p>
+                    </div>
                     </div>
                     </div>
                 </a>

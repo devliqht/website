@@ -1,0 +1,119 @@
+/* reusable css elements will be placed here */
+
+/* ------------------ */
+/* Color variables */
+:root {
+    --main: #6385B5;
+    --light: #C0C3E4;
+    --dark: #070607;
+    --lightdark: #131214;
+    --green: #3AA74C;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+/* Fonts */
+.font--montserrat { 
+    font-family: 'Montserrat', sans-serif;
+}
+.font--quicksand { 
+    font-family: 'Quicksand', sans-serif;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+/* HR gradient */
+.gradient_underline { 
+    color: #fff;
+    text-decoration: none; 
+    display: inline-block;
+    position: relative;
+}
+.gradient_underline:after {    
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.gradient_underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+/* ------------------ */
+
+
+/* ------------------ */
+/* Gradient for text color */
+.gradient_text_color {
+    background: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+} 
+/* ------------------ */
+
+
+.padding {
+    padding: 20px;
+}
+
+
+/* ------------------ */
+/* Vertical or Horizontal line */
+.vertical {
+    height: 100%;
+    width: 5px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+.horizontal {
+    height: 5px;
+    width: 100%;
+    border: none;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    border-radius: 10px;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+/* Text formatting */
+.title_text {
+    color: white;
+    font-size: 45px;
+    transition: 0.4s;
+    cursor: default;
+} 
+.subtext-title {
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: default;
+    padding-top: 1em;
+} 
+/* ------------------ */
+
+.center_content {
+    justify-content: center;
+}
+.dbtc {
+    position: fixed;
+    min-width: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+i {
+    transition: 1s;
+}
+i:hover {
+    color: #97D9E1;
+}

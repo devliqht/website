@@ -1,11 +1,3 @@
-:root {
-    --main: #6385B5;
-    --light: #C0C3E4;
-    --dark: #070607;
-    --lightdark: #1A191C;
-    --green: #3AA74C;
-}
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -13,11 +5,8 @@
     margin: 0;
 }
 
-.font--montserrat {
-    font-family: 'Montserrat', sans-serif;
-}
-.font--quicksand {
-    font-family: 'Quicksand', sans-serif;
+body {
+    background-image: url("../assets/bg/bg-2.jpg");
 }
 
 grid-display {
@@ -50,59 +39,41 @@ sidebar {
 page {
     grid-area: page;
     overflow-y: scroll; 
-} .intro {
+} 
+.intro {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
     justify-content: center;
-} .intro > .intro_text   {
+} 
+.intro > .intro_text   {
     color: white;
-    font-size: 55px;
-    text-align: left;
+    font-size: 45px;
+    text-align: center;
     transition: 0.4s;
     height: 50%;
     cursor: default;
-} .intro p {
+} 
+.intro p {
     position: relative;
     color: white;
     font-size: 20px;
     bottom: 0;
 }
 
-.gradient_underline {
-    color: #fff;
-    text-decoration: none; 
-    display: inline-block;
-    position: relative;
-}
-  .gradient_underline:after {    
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-  .gradient_underline:hover:after { 
-    width: 100%; 
-    left: 0; 
-}
-
 .firstpart {
     width: 100%;
-    height: 100%;
-    background-image: url("../assets/bg/bg-2.jpg");
+    height: 55%;
     padding-top: 7%;
     background-size: cover; 
     min-width: 100%;
+
 } 
-.details_section {
+.details_section { 
     margin: auto;
     width: 100%;
-    height: 120%;
+    height: 100%;
     background-color: var(--lightdark);
     background-size: cover;
     min-width: 100%;
@@ -113,6 +84,42 @@ page {
 .details_section::-webkit-scrollbar {
     display: none;
 } 
+.details_0 { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 5em; padding-top: 6em;
+    min-width: 800px;
+}
+.details_1 { /* First half */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 800px;
+}
+.details_2 { /* Second half */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 5em; padding-top: 6em;
+    min-width: 800px;
+}
+ul.details_ul { /* UL for Details */
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: default;
+    padding-top: 1em;
+}
+.details_wrapper { /* Wrapper for details for the two halves */
+    display: flex;
+}
+.details_img { /* IMG for details */
+    padding-top: 1em;
+    position: relative;
+    min-width: 700px;
+    width: 50%;
+}
 .about_section {
     margin: auto;
     width: 100%;
@@ -121,76 +128,3 @@ page {
     background-size: cover; 
     min-width: 100%;
 } 
-.gradient_text_color {
-    background: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-} 
-.padding {
-    padding: 20px;
-}
-.vertical {
-    height: 100%;
-    width: 5px;
-    border: none;
-    background-color: white;
-    border-radius: 10px;
-}
-.horizontal {
-    height: 5px;
-    width: 100%;
-    border: none;
-    background-color: #D9AFD9;
-    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
-    border-radius: 10px;
-}
-.details_1 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-left: 5em; padding-top: 6em;
-    min-width: 800px;
-}
-
-.details_2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-left: 5em; padding-top: 6em;
-    min-width: 800px;
-}
-
-.title_text {
-    color: white;
-    font-size: 55px;
-    transition: 0.4s;
-    cursor: default;
-} 
-.subtext-title {
-    color: white;
-    font-size: 25px;
-    transition: 0.4s;
-    cursor: default;
-    padding-top: 1em;
-} 
-
-ul.details_ul {
-    color: white;
-    font-size: 25px;
-    transition: 0.4s;
-    cursor: default;
-    padding-top: 1em;
-}
-
-.details_wrapper {
-    display: flex;
-}
-
-.details_img {
-    padding-top: 1em;
-    position: relative;
-    min-width: 700px;
-    width: 50%;
-}
