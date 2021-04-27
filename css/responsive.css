@@ -68,9 +68,6 @@
     .details_wrapper {
         flex-direction: column;
     }
-    .details_section {
-        height: 220%;
-    }
     .details_0, .details_1, .details_2 {
         padding-left: 1em;
         min-width: 1px;
