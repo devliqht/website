@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #c03cff;
-    background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
+    background-color: #21D4FD;
+    background-image: linear-gradient(30deg, #21D4FD 0%, #B721FF 100%);
 }
 
 grid-display {
@@ -41,12 +41,23 @@ page {
     grid-area: page;
     overflow-y: scroll; 
 } 
+
+
+
+/* ------------------ */
+.firstpart {
+    width: 100%;
+    height: 500px;
+    background-size: cover; 
+    justify-content: center;
+}
 .intro {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
     justify-content: center;
+    top: 27%;
 } 
 .intro > .intro_text   {
     position: relative;
@@ -56,7 +67,6 @@ page {
     transition: 0.4s;
     height: 50%;
     cursor: default;
-    top: 27%;
 } 
 .intro p {
     position: relative;
@@ -64,17 +74,19 @@ page {
     font-size: 20px;
     bottom: 0;
 }
-.firstpart {
-    width: 100%;
-    height: 500px;
-    background-size: cover; 
-} 
+/* ------------------ */
+
+
+/* ------------------ */
 .details_section { 
     margin: auto;
     width: 100%;
     height: fit-content; 
     background-color: var(--lightdark);
     background-size: cover;
+}
+.details_wrapper { 
+    display: flex;
 } 
 .details_0 { 
     display: flex;
@@ -82,33 +94,35 @@ page {
     position: relative;
     padding-left: 2em; 
 }
-.details_1 { /* First half */
+.details_1 {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.details_2 { /* Second half */
+.details_2 { 
     display: flex;
     flex-direction: column;
     position: relative;
     padding-left: 5em; padding-top: 6em;
 }
-ul.details_ul { /* UL for Details */
+ul.details_ul { 
     color: white;
     font-size: 20px;
     transition: 0.4s;
     cursor: default;
     padding-top: 1em;
 }
-.details_wrapper { /* Wrapper for details for the two halves */
-    display: flex;
-}
-.details_img { /* IMG for details */
+
+.details_img { 
     padding-top: 1em;
     position: relative;
     min-width: 700px;
     width: 50%;
 }
+/* ------------------ */
+
+
+/* ------------------ */
 .about_section {
     margin: auto;
     width: 100%;
@@ -117,3 +131,4 @@ ul.details_ul { /* UL for Details */
     background-size: cover; 
     min-width: 100%;
 } 
+/* ------------------ */

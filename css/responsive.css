@@ -16,49 +16,47 @@
         width: 100vw;
         height: 100vh;
     }
-    .firstpart {
-        height: 60%;
-    }
+
+    /* ------------------ */
+    /* NAVIGATION BAR */
     .navbar-flex {
         padding-top: 17px;
+        flex-direction: row;
+        justify-content: left;
     }
     .navbar-flex > a {
-        display: none;
-    }
-    .intro {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 80%;
-        justify-content: center;
-    } .intro > .intro_text   {
-        color: white;
-        font-size: 29px;
-        text-align: center;
-        top: 30%;
-    } .intro p {
-        color: white;
-        font-size: 30px;
-    } .intro hr {
-        display: none;
-    }
-    .intro .card {
-        display: none;
-    }
-    .other_half {
         display: none;
     }
     .navbar-flex > img.responsive_sidebar_icon {
         margin-left: 25px;
         padding: 4px;
     }
-    .navbar-flex {
-        flex-direction: row;
-        justify-content: left;
+    /* ------------------ */
+
+    
+    /* ------------------ */
+    /*  Firstpart / Entrance */
+    .firstpart {
+        height: 300px;
+    }
+    .intro {
+        flex-direction: column;
+        top: 42%;
+    } 
+    .intro > .intro_text   {
+        font-size: 29px;
+    } 
+    .other_half {
+        display: none;
     }
     .intro p.clickable {
         font-size: 19px;
     }
+    /* ------------------ */
+
+
+    /* ------------------ */
+    /* Details Section */
     .details_wrapper {
         flex-direction: column;
     }
@@ -69,17 +67,24 @@
     .details_img {
         min-width: 350px;
     }
+    /* ------------------ */
+
     .dbtc {
         left: 10;
     }
 }
 
 /* Desktop Format */
+/* Only desktop screens can see this */
 @media only screen and (min-width: 1024px) {
+
+    /* Hide sidebar icon */
     .navbar-flex > img.responsive_sidebar_icon {
         display: none;
     }
 
+    /* ------------------ */
+    /* Custom scrollbar */
     ::-webkit-scrollbar {
         width: 7px;
     }
@@ -93,4 +98,7 @@
         background-image: linear-gradient(315deg, #2B86C5 0%, #784BA0 50%, #c03cff 100%);
         border-radius: 15px;
     }
+    /* ------------------ */
 }
+
+
