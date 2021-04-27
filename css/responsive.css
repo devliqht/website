@@ -1,6 +1,6 @@
 /* All responsive CSS code will be placed here. */
 
-@media screen and (max-width: 1024px) /* Recommended width for phones. */ {
+@media screen and (max-width: 1000px) /* Recommended width for phones. */ {
     grid-display {
         display: grid;
         grid-template-columns: 0fr 1fr;
@@ -17,7 +17,6 @@
         height: 100vh;
     }
     .firstpart {
-        padding-top: 20%;
         height: 40%;
     }
     .navbar-flex {
@@ -37,6 +36,7 @@
         color: white;
         font-size: 29px;
         text-align: center;
+        top: 30%;
     } .intro p {
         color: white;
         font-size: 30px;
@@ -55,9 +55,6 @@
     .navbar-flex > img.responsive_sidebar_icon {
         margin-left: 25px;
         padding: 4px;
-    }
-    .intro > .intro_text {
-        padding-top: 0%;
     }
     .dbtc {
         display: none;
