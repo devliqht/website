@@ -37,7 +37,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -51,7 +51,7 @@
 /* ------------------ */
 /* Gradient for text color */
 .gradient_text_color {
-    background: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    background: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -79,7 +79,7 @@
     width: 100%;
     border: none;
     background-color: #D9AFD9;
-    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
     border-radius: 10px;
 }
 /* ------------------ */
@@ -106,10 +106,11 @@
     justify-content: center;
 }
 .dbtc {
-    position: fixed;
-    min-width: 50px;
-    padding-left: 10px;
-    padding-top: 10px;
+    position: relative;
+    z-index: 6;
+    color: white;
+    bottom: 10;
+    margin-right: 45px;
 }
 i {
     transition: 1s;
