@@ -8,7 +8,6 @@
 body {
     background-color: #c03cff;
     background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
-
 }
 
 grid-display {
@@ -65,7 +64,6 @@ page {
     font-size: 20px;
     bottom: 0;
 }
-
 .firstpart {
     width: 100%;
     height: 60%;
@@ -74,7 +72,7 @@ page {
 .details_section { 
     margin: auto;
     width: 100%;
-    height: fit-content + 100px;
+    height: fit-content; 
     background-color: var(--lightdark);
     background-size: cover;
 } 

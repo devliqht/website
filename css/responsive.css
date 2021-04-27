@@ -17,11 +17,10 @@
         height: 100vh;
     }
     .firstpart {
-        height: 40%;
+        height: 60%;
     }
     .navbar-flex {
-        height: 70px;
-        padding-top: 22px;
+        padding-top: 17px;
     }
     .navbar-flex > a {
         display: none;
@@ -53,11 +52,9 @@
         margin-left: 25px;
         padding: 4px;
     }
-    .dbtc {
-        display: none;
-    }
     .navbar-flex {
         flex-direction: row;
+        justify-content: left;
     }
     .intro p.clickable {
         font-size: 19px;
@@ -71,6 +68,9 @@
     }
     .details_img {
         min-width: 350px;
+    }
+    .dbtc {
+        left: 10;
     }
 }
 
