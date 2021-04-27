@@ -74,12 +74,6 @@ page {
     height: 100%;
     background-color: var(--lightdark);
     background-size: cover;
-    overflow-y: scroll;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
-} 
-.details_section::-webkit-scrollbar {
-    display: none;
 } 
 .details_0 { 
     display: flex;

@@ -17,7 +17,8 @@
         height: 100vh;
     }
     .firstpart {
-        padding-top: 100px;
+        padding-top: 20%;
+        height: 40%;
     }
     .navbar-flex {
         height: 70px;
@@ -34,7 +35,7 @@
         justify-content: center;
     } .intro > .intro_text   {
         color: white;
-        font-size: 35px;
+        font-size: 29px;
         text-align: center;
     } .intro p {
         color: white;
