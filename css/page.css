@@ -3,11 +3,11 @@
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
+    font-smooth: always;
 }
 
 body {
-    background-color: #21D4FD;
-    background-image: linear-gradient(30deg, #21D4FD 0%, #B721FF 100%);
+    background-image: url("../assets/bg/bg.jpg");
 }
 
 grid-display {
@@ -67,6 +67,7 @@ page {
     transition: 0.4s;
     height: 50%;
     cursor: default;
+    letter-spacing: -0.02em;
 } 
 .intro p {
     position: relative;

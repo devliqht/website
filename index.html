@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/util.css">
+        <link rel="stylesheet" href="css/darkmodeswitch.css">
         <!----------------------------->
 
         <!------ Fonts: Monsterrat, Quicksand & Open Sans Stylesheets ------>
@@ -39,11 +40,17 @@
             <header>     
                 <div id="navbar-1" class="navbar-flex">
                     <img class="responsive_sidebar_icon" src="assets/ic/sidebar.png" onclick="open_sidebar();"> 
-                    <a href=#firstpart class="hoverable font--montserrat" id="topnav">Github</a>                      
+                    <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="opt_color">
+                          <input type="checkbox" id="opt_color" onclick="opt_color();"/>
+                          <div class="slider round"></div>
+                      </label>
+                    </div>
+                    <a class="hoverable font--montserrat" id="topnav" href="https://github.com/mattportfolio/website">Github</a>                      
                     <a href=#about class="hoverable font--montserrat" id="topnav"> Contact</a>    
                     <a href=#details class="hoverable font--montserrat" id="topnav"> Details</a>
                     <a href=#firstpart class="hoverable font--montserrat" id="topnav"> Home</a>
-                    <h1 class="dbtc font--montserrat">matt.</h1>
+                    <h1 class="dbtc font--montserrat">M</h1>
                 </div>
             </header>
             <sidebar id="sidebar">
@@ -61,11 +68,10 @@
                           <div class="animate__animated animate__fadeInDown">
                             <h1 class="font--montserrat">Matt Erron<div class="other_half">Cabarrubias.</div></h1>
                           </div>
-                          <i class="fab fa-facebook-square fa-xs"></i>
-                          <i class="fab fa-discord fa-xs"></i>
-                          <i class="fab fa-instagram fa-xs"></i>
-                          <i class="fab fa-twitter fa-xs"></i>
-                          <i class="fab fa-github fa-xs"></i>
+                          <i class="fab fa-facebook-square fa-xs" onclick="window.location='https://www.facebook.com/matterron23/'"></i>
+                          <i class="fab fa-discord fa-xs" onclick="prompt('Ctrl + C to copy my discord tag below.','Liqht#8961')"></i>
+                          <i class="fab fa-instagram fa-xs" onclick="window.location='https://www.instagram.com/matt.chill_/'"></i>
+                          <i class="fab fa-github fa-xs" onclick="window.location='https://github.com/mattportfolio/website'"></i>
                           <div class="padding"></div>
                         </div>
                     </div>             
@@ -77,31 +83,31 @@
                         <div class="details_0" style="padding-top: 4em;">
                             <h1 class="title_text font--montserrat">Hello.</h1>
                             <div class="timeline" style="padding-top: 2em;">
-                                <div class="container left">
+                                <div class="container">
                                   <div class="content">
                                     <h2 class="font--montserrat">Name</h2>
                                     <p class="font--quicksand">My name is Matt Erron G. Cabarrubias. I live in the Philippines.</p>
                                   </div>
                                 </div>
-                                <div class="container right">
+                                <div class="container">
                                   <div class="content">
                                     <h2 class="font--montserrat">Age</h2>
                                     <p class="font--quicksand">My age is 15.</p>
                                   </div>
                                 </div>
-                                <div class="container left">
+                                <div class="container">
                                   <div class="content">
                                     <h2 class="font--montserrat">Personality</h2>
                                     <p class="font--quicksand">I inherit the INFP personality. I'm an introverted person in the outside, but extroverted to my close friends. I am a mediator and a critical thinker.</p>
                                   </div>
                                 </div>
-                                <div class="container right">
+                                <div class="container">
                                   <div class="content">
                                     <h2 class="font--montserrat">Sexuality</h2>
                                     <p class="font--quicksand">My sexuality is straight and I am a male. I respect other people regardless of your sexuality. I am an open minded person.</p>
                                   </div>
                                 </div>
-                                <div class="container left">
+                                <div class="container">
                                   <div class="content">
                                     <h2 class="font--montserrat">Zodiac Sign</h2>
                                     <p class="font--quicksand">My birthday is on September 5, 2005 and I have the Virgo zodiac sign.</p>
@@ -114,23 +120,30 @@
                         <hr class="horizontal" style="width: 20%;">
                         <p class="subtext-title font--quicksand">Everyone has hobbies and interests. No wonder I have some. Just saying.</p>
                         <ul class="details_ul font--quicksand" style="padding-left: 1em;">
-                            <li>I listen to music often. I can't skip a day <span style="color: #2B86C5;">without listening to music.</span></li>
-                            <li>I play video games a lot. Specifically on <span style="color: #2B86C5;">Genshin Impact.</span></li>
-                            <li>When visiting websites, I always wonder how they execute it so I take <span style="color: #2B86C5;">inspiration.</span></li>
-                            <li>When I have the time and no schoolwork, I go do <span style="color: #2B86C5;">some biking.</span></li>
+                            <li>I listen to music often. I can't skip a day <span style="color: var(--text-dark);">without listening to music.</span></li>
+                            <li>I play video games a lot. Specifically on <span style="color: var(--text-dark);">Genshin Impact.</span></li>
+                            <li>When visiting websites, I always wonder how they execute it so I take <span style="color: var(--text-dark);">inspiration.</span></li>
+                            <li>When I have the time and no schoolwork, I go do <span style="color: var(--text-dark);">some biking.</span></li>
                         </ul>  
                         <h1 class="title_text font--montserrat" style="padding-top: 2em;">My works.</h1>
                         <hr class="horizontal" style="width: 20%;">
-                        <p class="subtext-title font--quicksand"> Genshin Impact website. Click <span style="color: #2B86C5;" class="gradient_underline" onclick="location.href='https://mattportfolio.github.io/liyue_matt/'">here.</span> <br>
-                        Astral Client website. Click <span style="color: #2B86C5;" class="gradient_underline" onclick="location.href='https://astralclient.net'">here.</span></p>
+                        <p class="subtext-title font--quicksand"><span style="color: var(--text-dark);" class="gradient_underline" onclick="location.href='https://mattportfolio.github.io/liyue_matt/'"><i class="fas fa-angle-double-right fa-xs"></i> This <i class="fas fa-angle-double-left fa-xs"></i> </span> was supposed to be my performance task website but the topic was changed to about yourself. <br></p>
+                        <p class="subtext-title font--quicksand">Astral Client website. Click <span style="color: var(--text-dark);" class="gradient_underline" onclick="location.href='https://astralclient.net'">here.</span></p>
                     </div>
                     </div>
                     <div class="padding"></div>
                     </div>
                 </a>
+                <!--<a name="contacts">
+                  <div class="details_section" style="background-color: white;">
+                    <div class="details_0">                   
+                       <h1 class="title_text-rev font--quicksand">Contact Me</h1>
+                    </div>
+
+                  </div>
+                </a>-->
                 <a name="about">
                     <div class="about_section">
-                        <!--To be continued-->
                     </div>
                 </a>
             </page>

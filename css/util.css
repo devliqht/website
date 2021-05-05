@@ -4,10 +4,17 @@
 /* Color variables */
 :root {
     --main: #6385B5;
-    --light: #C0C3E4;
-    --dark: #070607;
-    --lightdark: #131214;
+    --light: #DEDEDE;
+    --lighter: #FFFFFF;
+    --dark: #181818;
+    --lightdark: #212121;
     --green: #3AA74C;
+    --text-dark: #747474;
+    --timehover: #21D4FD;
+    --hgradient: linear-gradient(315deg, #747474 0%, #656565 50%, #5B5B5B 100%);
+    --intro: linear-gradient(30deg, #21D4FD 0%, #B721FF 100%);
+    /*url("../assets/bg/bg.jpg");*/
+    /* linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%); */
 }
 /* ------------------ */
 
@@ -37,7 +44,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
+    background-image: var(--hgradient);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -79,7 +86,7 @@
     width: 100%;
     border: none;
     background-color: #D9AFD9;
-    background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
+    background-image: var(--hgradient);
     border-radius: 10px;
 }
 /* ------------------ */
@@ -88,17 +95,35 @@
 /* ------------------ */
 /* Text formatting */
 .title_text {
-    color: white;
+    color: var(--light);
     font-size: 45px;
     transition: 0.4s;
     cursor: default;
+    letter-spacing: -0.02em;
 } 
 .subtext-title {
-    color: white;
+    color: var(--light);
     font-size: 20px;
     transition: 0.4s;
     cursor: default;
     padding-top: 1em;
+    letter-spacing: -0.02em;
+} 
+.title_text-rev {
+    color: var(--dark);
+    font-size: 45px;
+    transition: 0.4s;
+    cursor: default;
+    font-style: bold;
+    letter-spacing: -0.02em;
+} 
+.subtext-title-rev {
+    color: var(--dark);
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: default;
+    padding-top: 1em;
+    letter-spacing: -0.02em;
 } 
 /* ------------------ */
 
@@ -108,8 +133,8 @@
 .dbtc {
     position: relative;
     z-index: 6;
-    color: white;
-    bottom: 10;
+    color: var(--light);
+    margin-top: 8px;
     margin-right: 45px;
 }
 i {
@@ -117,5 +142,15 @@ i {
 }
 i:hover {
     color: #2B86C5;
+}
+
+.gallery-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.gallery-img {
+    width: 40%;
+    min-width: 300px;
 }
 

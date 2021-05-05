@@ -5,16 +5,14 @@
     flex-direction: row-reverse;
     height: 62px;
     width: 100%;
-    background: #121114;
+    background: var(--dark);
     position: fixed;
     transition: 0.3s;
     overflow-x: hidden;
-    padding-top: 19px;
-    padding-right: 35px;
     -ms-overflow-style: none; 
     scrollbar-width: none;  
     z-index: 4;
-    border-bottom: 3px solid #1A181C;
+    border-bottom: 3px solid #262329;
     justify-content: center;
 } 
 .navbar-flex::-webkit-scrollbar {
@@ -26,8 +24,10 @@
     display: inline-block;
     position: relative;
     margin-right: 45px;
+    margin-top: 18px;
     font-size: 19px;
     font-style: bold;
+    letter-spacing: -0.02em;
 }
 .navbar-flex > a:after {    
     content: "";
@@ -35,7 +35,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
+    background-image: var(--hgradient);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -92,38 +92,6 @@
 .sidebar-flex .closebtn:hover {
     transform: rotate(90deg);
 } 
-.sidebar-flex > ._sub {
-    display: flex;
-    width: 100%;
-    border: 2px #EFEFEF;
-    border-bottom-style: solid;
-    padding: 8px 8px 8px 49px;
-    min-width: 300px;
-    cursor: pointer;
-    transition: 0.3s;
-    color: #383F4C;
-    font-size: 19px;
-} 
-.sidebar-flex > ._sub:hover {
-    background: #EFEFEF;
-} 
-.sidebar-flex > ._sub > img {
-    width: 10%;
-} 
-.sidebar-flex::-webkit-scrollbar {
-    width: 5px;
-}
-.sidebar-flex::-webkit-scrollbar-track {
-    background: #383F4C; 
-}
-.sidebar-flex::-webkit-scrollbar-thumb {
-    background: #E5E5E5; 
-    border-radius: 10px;
-    height: 50%;
-}
-.sidebar-flex::-webkit-scrollbar-thumb:hover {
-    background: #F4D8A8; 
-}
 .sidebar_header { 
     width: 100%;
     background: #393B40;

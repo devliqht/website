@@ -7,7 +7,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-image: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
+    background-image: var(--hgradient);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -28,14 +28,14 @@
 }
 .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: var(--light);
     position: relative;
     border-radius: 9px;
-    border: 4px solid rgba(217,175,217,0);
-    transition: 0.25s;
+    border: 4px solid var(--light);
+    transition: 0.4s;
 }
 .content:hover {
-    border: 4px solid #c03cff;
+    border: 4px solid var(--timehover);
 }
 
 /* placing this on responsive.css doesn't work so it stays here */
