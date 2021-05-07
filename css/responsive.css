@@ -28,7 +28,7 @@
         display: none;
     }
     .navbar-flex > img.responsive_sidebar_icon {
-        margin-left: 25px;
+        margin-left: 12px;
         padding: 4px;
     }
     /* ------------------ */
@@ -82,6 +82,25 @@
     }
     .container-wrapper {
         flex-direction: column;
+        padding: 10px 0 10px 5%;
+    }
+    .links-wrapper {
+        padding: 10px 0 10px 5%;
+    }
+    .contacts_wrapper {
+        padding: 0 2px 3px 0;
+    }
+    .contacts-container {
+        width: 330px;
+    }
+    button {
+        font-size: 0.6em;
+    }
+    .disappear {
+        display:none;
+    }
+    .theme-switch-wrapper > p {
+        display: none;
     }
 }
 

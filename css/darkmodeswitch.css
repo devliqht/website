@@ -29,6 +29,7 @@ em {
     right: 0;
     top: 0;
     transition: .4s;
+    width: 60px;
 }
   
 .slider:before {

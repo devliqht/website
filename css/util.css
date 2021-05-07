@@ -68,7 +68,7 @@
 
 
 .padding {
-    padding-bottom: 20px; padding-top: 20px;
+    padding-bottom: 18px; padding-top: 18px;
 }
 
 
@@ -96,7 +96,7 @@
 /* Text formatting */
 .title_text {
     color: var(--light);
-    font-size: 45px;
+    font-size: 40px;
     transition: 0.4s;
     cursor: default;
     letter-spacing: -0.02em;
@@ -111,7 +111,7 @@
 } 
 .title_text-rev {
     color: var(--dark);
-    font-size: 45px;
+    font-size: 40px;
     transition: 0.4s;
     cursor: default;
     letter-spacing: -0.02em;
@@ -133,8 +133,9 @@ button {
     font-size: 1em;
     background: var(--hgradient);
     color: #fff;
-    outline: 2px solid #333;
-    border: 0.25rem solid #fff;
+    border: white;
+    outline: 0.15em #333 solid;
+    border: 2px #fff solid;
     padding: 0.85em 0.75em;
     position: relative;
     z-index: 1;
