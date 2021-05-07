@@ -58,7 +58,7 @@
 /* ------------------ */
 /* Gradient for text color */
 .gradient_text_color {
-    background: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
+    background: var(--hgradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -135,7 +135,6 @@
     z-index: 6;
     color: var(--light);
     margin-top: 8px;
-    margin-right: 45px;
 }
 i {
     transition: 1s;

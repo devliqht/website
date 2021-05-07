@@ -3,6 +3,9 @@ function close_sidebar() { document.getElementById("navbar-2").style.width="0"; 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 const cb = document.getElementById("opt_color");
 
+
+// Get current theme setting;
+// Load current theme on start
 if (currentTheme) {
     if (currentTheme === 'color') {
         cb.checked = true;
@@ -17,6 +20,8 @@ if (currentTheme) {
         document.documentElement.style.setProperty('--timehover', '#FFFFFF');
     }
 }
+
+// Change theme
 function opt_color() {
     if (cb.checked == true){
         localStorage.setItem('theme', 'color');

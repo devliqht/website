@@ -23,11 +23,13 @@
     text-decoration: none; 
     display: inline-block;
     position: relative;
-    margin-right: 45px;
     margin-top: 18px;
     font-size: 19px;
     font-style: bold;
     letter-spacing: -0.02em;
+}
+.navbar-flex > .right-margin {
+    margin-right: 45px;
 }
 .navbar-flex > a:after {    
     content: "";

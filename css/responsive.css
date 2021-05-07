@@ -84,7 +84,7 @@
 
 /* Desktop Format */
 /* Only desktop screens can see this */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1000px) {
 
     /* Hide sidebar icon */
     .navbar-flex > img.responsive_sidebar_icon {
