@@ -1,7 +1,5 @@
 /* reusable css elements will be placed here */
-
 /* ------------------ */
-/* Color variables */
 :root {
     --main: #6385B5;
     --light: #DEDEDE;
@@ -20,7 +18,6 @@
 
 
 /* ------------------ */
-/* Fonts */
 .font--montserrat { 
     font-family: 'Montserrat', sans-serif;
 }
@@ -31,7 +28,6 @@
 
 
 /* ------------------ */
-/* HR gradient animation */
 .gradient_underline { 
     color: #fff;
     text-decoration: none; 
@@ -56,7 +52,6 @@
 
 
 /* ------------------ */
-/* Gradient for text color */
 .gradient_text_color {
     background: var(--hgradient);
     background-clip: text;
@@ -67,10 +62,10 @@
 /* ------------------ */
 
 
+/* ------------------ */
 .padding {
     padding-bottom: 18px; padding-top: 18px;
 }
-
 .padding-sm {
     padding: 10px;
 }
@@ -89,10 +84,13 @@
 .padding-xxxlg {
     padding: 55px;
 }
+.center_content {
+    justify-content: center;
+}
+/* ------------------ */
 
 
 /* ------------------ */
-/* Vertical or Horizontal line */
 .vertical {
     height: 100%;
     width: 5px;
@@ -112,7 +110,6 @@
 
 
 /* ------------------ */
-/* Text formatting */
 .title_text {
     color: var(--light);
     font-size: 40px;
@@ -146,7 +143,6 @@
 
 
 /* ------------------ */
-/* Link button on contacts section */
 button {
     font-size: 1em;
     background: var(--hgradient);
@@ -175,7 +171,7 @@ button::after {
 button[class^="link"]::after {
     transition: all 0.6s ease;
   }
-  button[class^="link"]:hover::after {
+button[class^="link"]:hover::after {
     transition: all 0.6s ease-out;
 }
 button.link_button::after {
@@ -192,10 +188,6 @@ button.link_button:hover::after {
 
 
 /* ------------------ */
-/* Misc */
-.center_content {
-    justify-content: center;
-}
 i {
     transition: 1s;
 }

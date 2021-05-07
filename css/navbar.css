@@ -1,5 +1,4 @@
 /* ------------------ */
-/* Top Navigation Bar */
 .navbar-flex {
     display: flex;
     flex-direction: row-reverse;
@@ -64,7 +63,6 @@
 
 
 /* ------------------ */
-/* Openable sidebar */
 .sidebar-flex {
     display: flex;
     flex-direction: column;
