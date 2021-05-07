@@ -43,7 +43,7 @@ em {
 }
   
 input:checked + .slider {
-    background-color:#B721FF;
+    background-color:rgb(48,209,88);
 }
   
 input:checked + .slider:before {
