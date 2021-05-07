@@ -126,31 +126,9 @@
 } 
 /* ------------------ */
 
-.center_content {
-    justify-content: center;
-}
-.dbtc {
-    position: relative;
-    z-index: 6;
-    color: var(--light);
-    margin-top: 8px;
-}
-i {
-    transition: 1s;
-}
-i:hover {
-    color: #2B86C5;
-}
 
-.gallery-img-wrapper {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-.gallery-img {
-    width: 40%;
-    min-width: 300px;
-}
+/* ------------------ */
+/* Link button on contacts section */
 button {
     font-size: 1em;
     background: var(--hgradient);
@@ -180,15 +158,29 @@ button[class^="link"]::after {
   button[class^="link"]:hover::after {
     transition: all 0.3s ease-out;
 }
-
 button.link_button::after {
     left: -20%;
     right: -20%;
     top: 0;
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
-  }
+}
 button.link_button:hover::after {
     transform: skewX(-45deg) scale(1, 1);
 }
+/* ------------------ */
+
+
+/* ------------------ */
+/* Misc */
+.center_content {
+    justify-content: center;
+}
+i {
+    transition: 1s;
+}
+i:hover {
+    color: #2B86C5;
+}
+/* ------------------ */
 

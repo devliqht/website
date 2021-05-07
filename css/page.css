@@ -122,7 +122,8 @@ ul.details_ul {
 }
 /* ------------------ */
 
-/* Contact Section */
+
+/* ------------------ */
 .contacts_wrapper {
     display: flex;
     width: 100%;
@@ -157,7 +158,9 @@ ul.details_ul {
     height: 100%;
     width: 400px; 
 }
-/* --------------- */
+/* ------------------ */
+
+
 
 /* ------------------ */
 .about_section {

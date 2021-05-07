@@ -54,6 +54,12 @@
 .navbar-flex > img.responsive_sidebar_icon:hover {
     filter: drop-shadow(5px 5px 7px black);
 }
+.dbtc {
+    position: relative;
+    z-index: 6;
+    color: var(--light);
+    margin-top: 8px;
+}
 /* ------------------ */
 
 
