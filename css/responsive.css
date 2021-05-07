@@ -1,6 +1,6 @@
 /* All responsive CSS code will be placed here. */
 
-@media screen and (max-width: 1000px) /* Recommended width for phones. */ {
+@media screen and (max-width: 800px) /* Recommended width for phones. */ {
     grid-display {
         display: grid;
         grid-template-columns: 0fr 1fr;
@@ -80,11 +80,14 @@
     .theme-switch-wrapper {
         margin-bottom: 17px;
     }
+    .container-wrapper {
+        flex-direction: column;
+    }
 }
 
 /* Desktop Format */
 /* Only desktop screens can see this */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
 
     /* Hide sidebar icon */
     .navbar-flex > img.responsive_sidebar_icon {

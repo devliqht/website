@@ -122,6 +122,42 @@ ul.details_ul {
 }
 /* ------------------ */
 
+/* Contact Section */
+.contacts_wrapper {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 45px;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.container-wrapper {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center; 
+}
+.contacts-container {
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.contacts-spacing {
+    margin: 3%;
+}
+.links-wrapper {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+}
+.link-container {
+    height: 100%;
+    width: 400px; 
+}
+/* --------------- */
 
 /* ------------------ */
 .about_section {
