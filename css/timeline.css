@@ -1,30 +1,20 @@
 .timeline {
     position: relative;
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 100%;
 }
-.timeline::after {
+/*.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
     background-image: var(--hgradient);
     top: 0;
     bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
+    left: 40%;
+}*/
 .container {
-    padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
-}
-
-.left {
-    left: 0;
-}
-.right {
-    left: 50%;
+    width: 100%;
 }
 .content {
     padding: 20px 30px;
@@ -40,13 +30,8 @@
 
 /* placing this on responsive.css doesn't work so it stays here */
 @media screen and (min-width: 1px) {
-    .timeline::after {
-        left: 31px;
-    }
     .container {
         width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
     }
     .container::before {
         left: 60px;

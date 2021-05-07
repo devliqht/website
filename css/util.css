@@ -71,6 +71,25 @@
     padding-bottom: 18px; padding-top: 18px;
 }
 
+.padding-sm {
+    padding: 10px;
+}
+.padding-md {
+    padding: 15px;
+}
+.padding-lg {
+    padding: 20px;
+}
+.padding-xlg {
+    padding: 30px;
+}
+.padding-xxlg {
+    padding: 40px;
+}
+.padding-xxxlg {
+    padding: 55px;
+}
+
 
 /* ------------------ */
 /* Vertical or Horizontal line */
@@ -100,13 +119,13 @@
     transition: 0.4s;
     cursor: default;
     letter-spacing: -0.02em;
+    width: fit-content;
 } 
 .subtext-title {
     color: var(--light);
     font-size: 20px;
     transition: 0.4s;
     cursor: default;
-    padding-top: 1em;
     letter-spacing: -0.02em;
 } 
 .title_text-rev {
@@ -121,7 +140,6 @@
     font-size: 20px;
     transition: 0.4s;
     cursor: default;
-    padding-top: 1em;
     letter-spacing: -0.02em;
 } 
 /* ------------------ */
@@ -141,6 +159,7 @@ button {
     z-index: 1;
     overflow: hidden;
     font-family: 'Montserrat';
+    width: 250px;
 }
 button:hover {
     color: #333;
@@ -154,10 +173,10 @@ button::after {
     display: block;
 }
 button[class^="link"]::after {
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
   }
   button[class^="link"]:hover::after {
-    transition: all 0.3s ease-out;
+    transition: all 0.6s ease-out;
 }
 button.link_button::after {
     left: -20%;

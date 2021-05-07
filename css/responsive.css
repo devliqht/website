@@ -1,6 +1,6 @@
 /* All responsive CSS code will be placed here. */
 
-@media screen and (max-width: 800px) /* Recommended width for phones. */ {
+@media screen and (max-width: 884px) /* Recommended width for phones. */ {
     grid-display {
         display: grid;
         grid-template-columns: 0fr 1fr;
@@ -59,6 +59,7 @@
     /* Details Section */
     .details_wrapper {
         flex-direction: column;
+        padding: 55px 25px 55px 7px;
     }
     .details_0, .details_1, .details_2 {
         padding-left: 1em;
@@ -82,16 +83,14 @@
     }
     .container-wrapper {
         flex-direction: column;
-        padding: 10px 0 10px 5%;
+        padding: 10px 0 10px 17px;
     }
     .links-wrapper {
         padding: 10px 0 10px 5%;
+        flex-direction: column;
     }
     .contacts_wrapper {
         padding: 0 2px 3px 0;
-    }
-    .contacts-container {
-        width: 330px;
     }
     button {
         font-size: 0.6em;
@@ -106,7 +105,7 @@
 
 /* Desktop Format */
 /* Only desktop screens can see this */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 884px) {
 
     /* Hide sidebar icon */
     .navbar-flex > img.responsive_sidebar_icon {

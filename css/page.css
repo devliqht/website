@@ -57,7 +57,7 @@ page {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    top: 27%;
+    top: 28%;
 } 
 .intro > .intro_text   {
     position: relative;
@@ -88,12 +88,13 @@ page {
 }
 .details_wrapper { 
     display: flex;
+    padding: 55px 55px 55px 55px;
 } 
 .details_0 { 
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-left: 2em; 
+
 }
 .details_1 {
     display: flex;
@@ -104,14 +105,14 @@ page {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-left: 5em; padding-top: 6em;
 }
 ul.details_ul { 
     color: white;
     font-size: 20px;
     transition: 0.4s;
     cursor: default;
-    padding-top: 1em;
+    position: relative;
+    left: 20;
 }
 
 .details_img { 
@@ -131,7 +132,7 @@ ul.details_ul {
     padding: 45px;
     justify-content: center;
     flex-direction: column;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .container-wrapper {
     display: flex;
@@ -141,12 +142,9 @@ ul.details_ul {
 }
 .contacts-container {
     height: 100%;
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-.contacts-spacing {
-    margin: 3%;
 }
 .links-wrapper {
     display: flex;
@@ -156,7 +154,7 @@ ul.details_ul {
 }
 .link-container {
     height: 100%;
-    width: 400px; 
+    width: 100%;
 }
 /* ------------------ */
 
