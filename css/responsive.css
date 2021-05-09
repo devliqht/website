@@ -103,6 +103,9 @@
     .disappear {
         display:none;
     }
+    .about_section {
+        height: 340px;
+    }
 }
 
 /* Desktop Format */

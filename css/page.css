@@ -164,7 +164,7 @@ ul.details_ul {
 .about_section {
     margin: auto;
     width: 100%;
-    height: 20%;
+    height: 175px;
     background: var(--dark);
     background-size: cover; 
     min-width: 100%;

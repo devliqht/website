@@ -8,9 +8,12 @@
     --lightdark: #212121;
     --green: #3AA74C;
     --text-dark: #747474;
-    --timehover: #21D4FD;
+    --timehover: #d9e0e2;
     --hgradient: linear-gradient(315deg, #747474 0%, #656565 50%, #5B5B5B 100%);
     --intro: linear-gradient(30deg, #21D4FD 0%, #B721FF 100%);
+    --fb: #3b5998;
+    --dc: #7289da;
+    --ig: #C13584;
     /*url("../assets/bg/bg.jpg");*/
     /* linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%); */
 }
@@ -169,20 +172,20 @@ button::after {
     display: block;
 }
 button[class^="link"]::after {
-    transition: all 0.6s ease;
+    transition: all 0.5s ease;
   }
 button[class^="link"]:hover::after {
-    transition: all 0.6s ease-out;
+    transition: all 0.5s ease-out;
 }
 button.link_button::after {
     left: -20%;
     right: -20%;
     top: 0;
     bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
+    transform: skewX(-30deg) scale(0, 1);
 }
 button.link_button:hover::after {
-    transform: skewX(-45deg) scale(1, 1);
+    transform: skewX(-30deg) scale(1, 1);
 }
 /* ------------------ */
 
