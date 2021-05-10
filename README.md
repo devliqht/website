@@ -14,3 +14,4 @@ https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34
 
 - Skew Buttons
 https://codepen.io/mhouse/pen/qbrxVB
+- All of these are free of copyright and open source.
