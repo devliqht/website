@@ -6,6 +6,11 @@
 ### Made using:
 - Animate.css
 - Fontawesome
-- W3.css
 - Googleapis
 - My own code
+### Honorable mentions (pieces of code I used from others):
+- Dark mode switch
+https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+
+- Skew Buttons
+https://codepen.io/mhouse/pen/qbrxVB
