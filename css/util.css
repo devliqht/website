@@ -1,15 +1,13 @@
 /* reusable css elements will be placed here */
 /* ------------------ */
 :root {
-    --main: #6385B5;
-    --light: #DEDEDE;
+    --darker: #181818;
+    --dark: #212121;
+    --light: #EFEFEF;
     --lighter: #FFFFFF;
-    --dark: #181818;
-    --lightdark: #212121;
     --green: #3AA74C;
-    --text-dark: #747474;
-    --timehover: #d9e0e2;
-    --hgradient: linear-gradient(315deg, #747474 0%, #656565 50%, #5B5B5B 100%);
+    --timeline: #d9e0e2;
+    --hgradient: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
     --intro: linear-gradient(30deg, #21D4FD 0%, #B721FF 100%);
     --fb: #3b5998;
     --dc: #7289da;
@@ -114,7 +112,7 @@
 
 /* ------------------ */
 .title_text {
-    color: var(--light);
+    color: var(--dark);
     font-size: 40px;
     transition: 0.4s;
     cursor: default;
@@ -122,7 +120,7 @@
     width: fit-content;
 } 
 .subtext-title {
-    color: var(--light);
+    color: var(--dark);
     font-size: 20px;
     transition: 0.4s;
     cursor: default;
@@ -151,8 +149,6 @@ button {
     background: var(--hgradient);
     color: #fff;
     border: white;
-    outline: 0.15em #333 solid;
-    border: 2px #fff solid;
     padding: 0.85em 0.75em;
     position: relative;
     z-index: 1;

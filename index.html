@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/util.css">
         <link rel="stylesheet" href="css/darkmodeswitch.css">
+        <link rel="stylesheet" href="css/keyframes.css">
         <!----------------------------->
 
         <!------ Fonts: Monsterrat, Quicksand & Open Sans Stylesheets ------>
@@ -34,18 +35,32 @@
         <meta property="og:title" content="Matt's Portfolio">
         <meta property="og:description" content="Calasanz Q4 Computer Main PT">
         <meta property="og:image" content="https://mattportfolio.github.io/website/assets/bg/meta_logo.png">
+
+        <link rel="preload" href="js/main.js" as="script">
     </head>
     <body>
+      <!-- A preloader is needed because if we refresh with our current 'dark mode' theme it's not smooth-->
+      <div class="preloader" id="preload">
+        <div class="preloader-wrapper">
+          <div class="loading"></div>
+        </div>
+        <div class="padding-md"></div>
+        <div class="preloader-text">
+          <h1 class="font--montserrat" style="text-align: center; color: var(--dark);" id="preloader-text"></h1>
+        </div>
+      </div>
         <grid-display id="grid-display">
             <header>     
                 <div id="navbar-1" class="navbar-flex">
-                    <img class="responsive_sidebar_icon" src="assets/ic/sidebar.png" onclick="open_sidebar();"> 
+                  <div class="padding-sm"></div>
+                  <i class="fas fa-bars fa-2x responsive_sidebar_icon" onclick="open_sidebar();"></i>
+                  <div class="padding-sm"></div>
                     <div class="theme-switch-wrapper">
                       <label class="theme-switch" for="opt_color">
                           <input type="checkbox" id="opt_color" onclick="opt_color();"/>
                           <div class="slider round"></div>
                       </label>
-                      <p class="font--quicksand" style="color: #fff; padding-left: 10px;">Color Mode</p>
+                      <p class="font--quicksand" style="color: var(--dark); padding-left: 10px;">Dark Mode</p>
                     </div>
                     <div class="right-margin disappear"></div>
                       <a class="hoverable font--montserrat" id="topnav" href="https://github.com/mattportfolio/website">Github</a> 
@@ -94,36 +109,36 @@
                             <div class="timeline">
                                 <div class="container">
                                   <div class="content">
-                                    <h2 class="font--montserrat">Name</h2>
-                                    <p class="font--quicksand">My name is Matt Erron G. Cabarrubias. I live in the Philippines.</p>
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Name</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">My name is Matt Erron G. Cabarrubias. I live in the Philippines.</p>
                                   </div>
                                 </div>
                                 <div class="padding-sm"></div>
                                 <div class="container">
                                   <div class="content">
-                                    <h2 class="font--montserrat">Age</h2>
-                                    <p class="font--quicksand">My age is 15.</p>
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Age</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">My age is 15.</p>
                                   </div>
                                 </div>
                                 <div class="padding-sm"></div>
                                 <div class="container">
                                   <div class="content">
-                                    <h2 class="font--montserrat">Personality</h2>
-                                    <p class="font--quicksand">I inherit the INFP personality. I'm an introverted person in the outside, but extroverted to my close friends. I am a mediator and a critical thinker.</p>
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Personality</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">I inherit the INFP personality. I'm an introverted person in the outside, but extroverted to my close friends. I am a mediator and a critical thinker.</p>
                                   </div>
                                 </div>
                                 <div class="padding-sm"></div>
                                 <div class="container">
                                   <div class="content">
-                                    <h2 class="font--montserrat">Sexuality</h2>
-                                    <p class="font--quicksand">My sexuality is straight and I am a male. I respect other people regardless of your sexuality. I am an open minded person.</p>
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Sexuality</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">My sexuality is straight and I am a male. I respect other people regardless of your sexuality. I am an open minded person.</p>
                                   </div>
                                 </div>
                                 <div class="padding-sm"></div>
                                 <div class="container">
                                   <div class="content">
-                                    <h2 class="font--montserrat">Zodiac Sign</h2>
-                                    <p class="font--quicksand">My birthday is on September 5, 2005 and I have the Virgo zodiac sign.</p>
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Zodiac Sign</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">My birthday is on September 5, 2005 and I have the Virgo zodiac sign.</p>
                                   </div>
                                 </div>                
                         </div>       
@@ -135,23 +150,23 @@
                         <div class="padding-sm"></div>
                         <p class="subtext-title font--quicksand">Everyone has hobbies and interests. No wonder I have some. Just saying.</p>
                         <ul class="details_ul font--quicksand">
-                            <li>I listen to music often. I can't skip a day <span style="color: var(--text-dark);">without listening to music.</span></li>
-                            <li>I play video games a lot. Specifically on <span style="color: var(--text-dark);">Genshin Impact.</span></li>
-                            <li>When visiting websites, I always wonder how they execute it so I take <span style="color: var(--text-dark);">inspiration.</span></li>
-                            <li>When I have the time and no schoolwork, I go do <span style="color: var(--text-dark);">some biking.</span></li>
+                            <li>I listen to music often. I can't skip a day <span style="color: var(--darker);">without listening to music.</span></li>
+                            <li>I play video games a lot. Specifically on <span style="color: var(--darker);">Genshin Impact.</span></li>
+                            <li>When visiting websites, I always wonder how they execute it so I take <span style="color: var(--darker);">inspiration.</span></li>
+                            <li>When I have the time and no schoolwork, I go do <span style="color: var(--darker);">some biking.</span></li>
                         </ul>  
                         <div class="padding-xxlg"></div>
                         <h1 class="title_text font--montserrat">My works.</h1>
                         <hr class="horizontal" style="width: 20%;">
                         <div class="padding-sm"></div>
-                        <p class="subtext-title font--quicksand"><span style="color: var(--text-dark);" class="gradient_underline" onclick="location.href='https://mattportfolio.github.io/liyue_matt/'"><i class="fas fa-angle-double-right fa-xs"></i> This <i class="fas fa-angle-double-left fa-xs"></i> </span> was supposed to be my performance task website but the topic was changed to about yourself. <br></p>
-                        <p class="subtext-title font--quicksand">Astral Client website. Click <span style="color: var(--text-dark);" class="gradient_underline" onclick="location.href='https://astralclient.net'">here.</span></p>
+                        <p class="subtext-title font--quicksand"><span style="color: var(--darker);" class="gradient_underline" onclick="location.href='https://mattportfolio.github.io/liyue_matt/'"><i class="fas fa-angle-double-right fa-xs"></i> This <i class="fas fa-angle-double-left fa-xs"></i> </span> was supposed to be my performance task website but the topic was changed to about yourself. <br></p>
+                        <p class="subtext-title font--quicksand">Astral Client website. Click <span style="color: var(--darker);" class="gradient_underline" onclick="location.href='https://astralclient.net'">here.</span></p>
                     </div>
                     </div>
                     </div>
                 </a>
                 <a name="contacts"> <!-- Reuse details section class because I'm lazy -->
-                  <div class="details_section" style="background-color: white;">
+                  <div class="details_section" style="background-color: var(--light);">
                     <div class="padding"></div>
                     <div class="contacts_wrapper"> 
                       <div class="container-wrapper">
@@ -195,21 +210,21 @@
                       <h1 class="subtext-title font--montserrat" >All use of external scripts and css are of fair use, no copyright intended.</h1>
                       <div class="padding-sm"></div>
                       <span style="display: flex; justify-content: center;">
-                        <i class="fab fa-facebook-square fa-lg" style="color: white;"></i><div class="padding-md"></div>
-                        <i class="fab fa-discord fa-lg" style="color: white;"></i><div class="padding-md"></div>
-                        <i class="fab fa-instagram fa-lg" style="color: white;"></i><div class="padding-md"></div>
-                        <i class="fab fa-github fa-lg" style="color: white;"></i>
+                        <i class="fab fa-facebook-square fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-discord fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-instagram fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-github fa-lg" style="color: var(--dark);"></i>
                       </span>
                       <div class="links-wrapper">
-                        <p style="color: var(--text-dark); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.facebook.com/matterron23/'">Facebook</p><div class="padding-sm"></div>
-                        <p style="color: var(--text-dark); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="prompt('Ctrl + C to copy my discord tag below.','Liqht#8961')">Discord</p><div class="padding-sm"></div>
-                        <p style="color: var(--text-dark); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.instagram.com/matt.chill_/'">Instagram</p><div class="padding-sm"></div>
-                        <p style="color: var(--text-dark); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://github.com/mattportfolio/website'">Github</p>
+                        <p style="color: var(--darker); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.facebook.com/matterron23/'">Facebook</p><div class="padding-sm"></div>
+                        <p style="color: var(--darker); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="prompt('Ctrl + C to copy my discord tag below.','Liqht#8961')">Discord</p><div class="padding-sm"></div>
+                        <p style="color: var(--darker); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.instagram.com/matt.chill_/'">Instagram</p><div class="padding-sm"></div>
+                        <p style="color: var(--darker); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://github.com/mattportfolio/website'">Github</p>
                       </div>
                     </div>
                 </a>
             </page>
-            <script src="js/main.js"></script>
+            <script src="js/main.js" defer></script>
         </grid-display>
     </body>
 </html>

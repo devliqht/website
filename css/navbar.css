@@ -4,21 +4,21 @@
     flex-direction: row-reverse;
     height: 62px;
     width: 100%;
-    background: var(--dark);
+    background: var(--lighter);
     position: fixed;
     transition: 0.3s;
     overflow-x: hidden;
     -ms-overflow-style: none; 
     scrollbar-width: none;  
     z-index: 4;
-    border-bottom: 3px solid #262329;
+    border-bottom: 3px solid var(--light);
     justify-content: center;
 } 
 .navbar-flex::-webkit-scrollbar {
     display: none;
 } 
 .navbar-flex > a {
-    color: #fff;
+    color: var(--dark);
     text-decoration: none; 
     display: inline-block;
     position: relative;
@@ -44,11 +44,10 @@
     width: 100%; 
     left: 0; 
 }
-.navbar-flex > img.responsive_sidebar_icon { 
+.navbar-flex > .responsive_sidebar_icon { 
+    color: var(--dark);
     position: relative;
-    bottom: 20%;
-    align-self: center;
-    transition: 0.3s;
+    bottom: 2px;
 }
 .navbar-flex > img.responsive_sidebar_icon:hover {
     filter: drop-shadow(5px 5px 7px black);
@@ -56,7 +55,7 @@
 .dbtc {
     position: relative;
     z-index: 6;
-    color: var(--light);
+    color: var(--dark);
     margin-top: 8px;
 }
 /* ------------------ */

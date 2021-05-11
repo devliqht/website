@@ -26,9 +26,8 @@
     .navbar-flex > a {
         display: none;
     }
-    .navbar-flex > img.responsive_sidebar_icon {
-        margin-left: 12px;
-        padding: 4px;
+    .navbar-flex > .responsive_sidebar_icon {
+
     }
     .dbtc {
         display: none;
@@ -111,7 +110,7 @@
 /* Desktop Format */
 /* Only desktop screens can see this */
 @media only screen and (min-width: 884px) {
-    .navbar-flex > img.responsive_sidebar_icon {
+    .navbar-flex > .responsive_sidebar_icon {
         display: none;
     }
 
@@ -121,7 +120,7 @@
     }
 
     ::-webkit-scrollbar-track {
-        background: var(--lightdark); 
+        background: #181818; 
     }
 
     ::-webkit-scrollbar-thumb {
