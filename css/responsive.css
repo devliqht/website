@@ -105,6 +105,10 @@
     .about_section {
         height: 340px;
     }
+
+    input[type=text] {
+        display: none;
+    }
 }
 
 /* Desktop Format */
