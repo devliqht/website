@@ -15,9 +15,9 @@
 }
 
 .loading {
-    border: 9px solid #f3f3f3;
+    border: 9px solid var(--light);
     border-radius: 50%;
-    border-top: 9px double #333;
+    border-top: 9px double var(--dark);
     width: 120px;
     height: 120px;
     animation: spin 0.9s linear infinite;
