@@ -39,10 +39,4 @@
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
-    .left::after, .right::after {
-        left: 15px;
-    }
-    .right {
-        left: 0%;
-    }
 }
