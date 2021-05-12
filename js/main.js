@@ -18,9 +18,6 @@ setTimeout(function(){
     preloader.style.display = "none";
 }, 4400); 
 
-var search_input = document.getElementById("search");
-search_input
-
 function open_sidebar() { document.getElementById("navbar-2").style.width="250px"; }
 function close_sidebar() { document.getElementById("navbar-2").style.width="0"; }
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; // store current theme as setting
