@@ -154,7 +154,7 @@ button {
     z-index: 1;
     overflow: hidden;
     font-family: 'Montserrat';
-    width: 250px;
+    width: 220px;
 }
 button:hover {
     color: #333;

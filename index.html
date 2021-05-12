@@ -47,7 +47,11 @@
         <div class="padding-md"></div>
         <div class="preloader-text">
           <h1 class="font--montserrat" style="text-align: center; color: var(--dark);" id="preloader-text"></h1>
+          <div class="padding-sm"></div>
+          <h3 class="font--quicksand" style="text-align: center; color: var(--dark);" id="preloader-subtext"></h1>
         </div>
+        <span id="loading_bar" style="display: flex; justify-content: center; text-align: center; position: absolute; bottom: 0; width: 0%; height: 5px; background: var(--hgradient);">
+        </span>
       </div>
         <grid-display id="grid-display">
             <header>     
@@ -176,14 +180,14 @@
                             <div class="padding-sm"></div>
                             <p class="subtext-title-rev font--quicksand">You can add me on facebook to see my latest posts, pictures and more. I also post daily memes for my fans. You can view my facebook account by clicking the button below.</p>
                         </div>
-                          <div class="padding-xxlg"></div>
+                          <div class="padding-sm"></div>
                         <div class="contacts-container">
                           <h1 class="title_text-rev font--montserrat" style="color: var(--dc);">Discord</h1>
                           <hr class="horizontal" style="width: 50%;">
                           <div class="padding-sm"></div>
                           <p class="subtext-title-rev font--quicksand">I am often online on discord, gaming and chatting with my friends. This is where I spend all my time to, to be honest. You can click and copy my discord tag below and add me as a friend. </p>                    
                         </div>   
-                          <div class="padding-xxlg"></div>    
+                          <div class="padding-sm"></div>    
                         <div class="contacts-container">
                           <h1 class="title_text-rev font--montserrat" style="color: var(--ig);">Instagram</h1>
                           <hr class="horizontal" style="width: 50%;">
@@ -194,9 +198,9 @@
                       <div class="padding"></div>
                       <div class="links-wrapper">
                           <div class="link-container"><button class="link_button" onclick="window.location='https://www.facebook.com/matterron23/'">Facebook</button></div>
-                            <div class="padding-xxlg disappear"></div>
+                            <div class="padding-sm "></div>
                           <div class="link-container"><button class="link_button" onclick="prompt('Ctrl + C to copy my discord tag below.','Liqht#8961')">Discord</button></div>
-                            <div class="padding-xxlg disappear"></div>
+                            <div class="padding-sm "></div>
                           <div class="link-container"><button class="link_button" onclick="window.location='https://www.instagram.com/matt.chill_/'">Instagram</button></div>
                       </div>            
                     </div>
@@ -225,6 +229,7 @@
                 </a>
             </page>
             <script src="js/main.js" defer></script>
+            <script src="js/preloader.js" defer></script>
         </grid-display>
     </body>
 </html>
