@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lexend&display=swap" rel="stylesheet">
         <!----------------------------->
 
         <!------ Fontawesome Stylesheet for Icons ------>
@@ -37,10 +38,32 @@
         <meta property="og:image" content="https://mattportfolio.github.io/website/assets/bg/meta_logo.png">
 
         <link rel="preload" href="js/main.js" as="script">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+          $(function(){
+            $("h1,h2,h3,h4,h5,p").addClass("animate__animated");
+          });
+        </script>
     </head>
     <body>
+
+      <style>
+        #myVideo {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 100%; 
+          min-height: 100%;
+          z-index: -1;
+          filter: blur(3px) opacity(50%);
+        }
+      </style>
+      <video autoplay muted loop id="myVideo">
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
       <!-- A preloader is needed because if we refresh with our current 'dark mode' theme it's not smooth-->
-      <div class="preloader" id="preload">
+      <!-- <div class="preloader" id="preload">
         <div class="preloader-wrapper">
           <div class="loading"></div>
         </div>
@@ -52,53 +75,47 @@
         </div>
         <span id="loading_bar" style="display: flex; justify-content: center; text-align: center; position: absolute; bottom: 0; width: 0%; height: 5px; background: var(--hgradient);">
         </span>
-      </div>
+      </div> **NOT NEDED ANYMORE **!-->
         <grid-display id="grid-display">
             <header>     
                 <div id="navbar-1" class="navbar-flex">
-                  <div class="padding-sm"></div>
+                  <div class="padding-sm-reverse"></div>
                   <i class="fas fa-bars fa-2x responsive_sidebar_icon" onclick="open_sidebar();"></i>
-                  <div class="padding-sm"></div>
-                    <div class="theme-switch-wrapper">
+                      <a class="hoverable font--josefin" id="topnav" href="https://github.com/mattportfolio/website">GITHUB</a> 
+                    <div class="right-margin disappear"></div>                     
+                      <a href=#about class="hoverable font--josefin" id="topnav">CONTACT</a> 
+                    <div class="right-margin disappear"></div>   
+                      <a href=#details class="hoverable font--josefin" id="topnav">DETAILS</a>
+                    <div class="right-margin disappear"></div>
+                      <a href=#firstpart class="hoverable font--josefin" id="topnav">HOME</a>
+
+                    <!-- <div class="theme-switch-wrapper">
                       <label class="theme-switch" for="opt_color">
                           <input type="checkbox" id="opt_color" onclick="opt_color();"/>
                           <div class="slider round"></div>
                       </label>
                       <p class="font--quicksand" style="color: var(--dark); padding-left: 10px;">Dark Mode</p>
-                    </div>
-                    <div class="right-margin disappear"></div>
-                      <a class="hoverable font--montserrat" id="topnav" href="https://github.com/mattportfolio/website">Github</a> 
-                    <div class="right-margin disappear"></div>                     
-                      <a href=#about class="hoverable font--montserrat" id="topnav"> Contact</a> 
-                    <div class="right-margin disappear"></div>   
-                      <a href=#details class="hoverable font--montserrat" id="topnav"> Details</a>
-                    <div class="right-margin disappear"></div>
-                      <a href=#firstpart class="hoverable font--montserrat" id="topnav"> Home</a>
-                    <div class="right-margin disappear"></div>
-                      <h1 class="dbtc font--montserrat">M</h1>
+                    </div> !-->
                 </div>
             </header>
             <sidebar id="sidebar">
                 <div id="navbar-2" class="sidebar-flex">
                     <img class="closebtn" src="assets/ic/x.png" onclick="close_sidebar();">
-                    <a href="#firstpart" class="font--montserrat">Home</a>
-                    <a href=#details class="font--montserrat">Details</a>
-                    <a href=#contacts class="font--montserrat">Contacts</a>
-                    <a href=#about class="font--montserrat">About</a>
+                    <a href="#firstpart" class="font--josefin">Home</a>
+                    <a href=#details class="font--josefin">Details</a>
+                    <a href=#contacts class="font--josefin">Contacts</a>
+                    <a href=#about class="font--josefin">About</a>
                 </div>
             </sidebar> 
             <page id="page">
                 <div class="firstpart" id="firstpart">
                     <div class="intro">
                         <div class="intro_text">
-                          <div class="animate__animated animate__fadeInDown">
-                            <h1 class="font--montserrat">Matt Erron<div class="other_half">Cabarrubias.</div></h1>
-                          </div>
+                            <h1 class="font--montserrat anim1" style="text-shadow: 2px 2px #212121;">Matt <div class="other_half">Cabarrubias</div></h1>
                             <i class="fab fa-facebook-square fa-xs" onclick="window.location='https://www.facebook.com/matterron23/'"></i>
                             <i class="fab fa-discord fa-xs" onclick="prompt('Ctrl + C to copy my discord tag below.','Liqht#8961')"></i>
                             <i class="fab fa-instagram fa-xs" onclick="window.location='https://www.instagram.com/matt.chill_/'"></i>
                             <i class="fab fa-github fa-xs" onclick="window.location='https://github.com/mattportfolio/website'"></i>
-                          <div class="padding"></div>
                         </div>
                     </div>             
                   </div>
@@ -106,106 +123,18 @@
                 <a name="details">
                     <div class="details_section">
                     <div class="details_wrapper center_content">
-                        <div class="details_0">
-                            <h1 class="title_text font--montserrat">Hello.</h1>
-                            <hr class="horizontal" style="width: 50%">
-                            <div class="padding-sm"></div>
-                            <div class="timeline">
-                                <div class="container">
-                                  <div class="content">
-                                    <h2 class="font--montserrat" style="color: var(--lighter)">Name</h2>
-                                    <p class="font--quicksand" style="color: var(--lighter)">My name is Matt Erron G. Cabarrubias. I live in the Philippines.</p>
-                                  </div>
-                                </div>
-                                <div class="padding-sm"></div>
-                                <div class="container">
-                                  <div class="content">
-                                    <h2 class="font--montserrat" style="color: var(--lighter)">Age</h2>
-                                    <p class="font--quicksand" style="color: var(--lighter)">My age is 15.</p>
-                                  </div>
-                                </div>
-                                <div class="padding-sm"></div>
-                                <div class="container">
-                                  <div class="content">
-                                    <h2 class="font--montserrat" style="color: var(--lighter)">Personality</h2>
-                                    <p class="font--quicksand" style="color: var(--lighter)">I inherit the INFP personality. I'm an introverted person in the outside, but extroverted to my close friends. I am a mediator and a critical thinker.</p>
-                                  </div>
-                                </div>
-                                <div class="padding-sm"></div>
-                                <div class="container">
-                                  <div class="content">
-                                    <h2 class="font--montserrat" style="color: var(--lighter)">Sexuality</h2>
-                                    <p class="font--quicksand" style="color: var(--lighter)">My sexuality is straight and I am a male. I respect other people regardless of your sexuality. I am an open minded person.</p>
-                                  </div>
-                                </div>
-                                <div class="padding-sm"></div>
-                                <div class="container">
-                                  <div class="content">
-                                    <h2 class="font--montserrat" style="color: var(--lighter)">Zodiac Sign</h2>
-                                    <p class="font--quicksand" style="color: var(--lighter)">My birthday is on September 5, 2005 and I have the Virgo zodiac sign.</p>
-                                  </div>
-                                </div>                
-                        </div>       
-                    </div>
+                      <div class="details_0">
+    
+                      </div>
                     <div class="padding-xlg"></div>
-                    <div class="details_1">            
-                        <h1 class="title_text font--montserrat">Hobbies & Interests.</h1>
-                        <hr class="horizontal" style="width: 20%;">
-                        <div class="padding-sm"></div>
-                        <p class="subtext-title font--quicksand">Everyone has hobbies and interests. No wonder I have some. Just saying.</p>
-                        <ul class="details_ul font--quicksand">
-                            <li>I listen to music often. I can't skip a day <span style="color: var(--darker);">without listening to music.</span></li>
-                            <li>I play video games a lot. Specifically on <span style="color: var(--darker);">Genshin Impact.</span></li>
-                            <li>When visiting websites, I always wonder how they execute it so I take <span style="color: var(--darker);">inspiration.</span></li>
-                            <li>When I have the time and no schoolwork, I go do <span style="color: var(--darker);">some biking.</span></li>
-                        </ul>  
-                        <div class="padding-xxlg"></div>
-                        
-                        <h1 class="title_text font--montserrat">My works.</h1>
-                        <hr class="horizontal" style="width: 20%;">
-                        <div class="padding-sm"></div>
-                        <p class="subtext-title font--quicksand"><span style="color: var(--darker);" class="gradient_underline" onclick="location.href='https://mattportfolio.github.io/liyue_matt/'"><i class="fas fa-angle-double-right fa-xs"></i> This <i class="fas fa-angle-double-left fa-xs"></i> </span> was supposed to be my performance task website but the topic was changed to about yourself. <br></p>
-                        <p class="subtext-title font--quicksand">Astral Client website. Click <span style="color: var(--darker);" class="gradient_underline" onclick="location.href='https://astralclient.net'">here.</span></p>
-                    </div>
+                      <div class="details_1">            
+
+                      </div>
                     </div>
                     </div>
                 </a>
                 <a name="contacts"> <!-- Reuse details section class because I'm lazy -->
                   <div class="details_section" style="background-color: var(--light);">
-                    <div class="padding"></div>
-                    <div class="contacts_wrapper"> 
-                      <div class="container-wrapper">
-                        <div class="contacts-container">
-                            <h1 class="title_text-rev font--montserrat" style="color: var(--fb);">Facebook</h1>
-                            <hr class="horizontal" style="width: 50%;">
-                            <div class="padding-sm"></div>
-                            <p class="subtext-title-rev font--quicksand">You can add me on facebook to see my latest posts, pictures and more. I also post daily memes for my fans. You can view my facebook account by clicking the button below.</p>
-                        </div>
-                          <div class="padding-sm"></div>
-                        <div class="contacts-container">
-                          <h1 class="title_text-rev font--montserrat" style="color: var(--dc);">Discord</h1>
-                          <hr class="horizontal" style="width: 50%;">
-                          <div class="padding-sm"></div>
-                          <p class="subtext-title-rev font--quicksand">I am often online on discord, gaming and chatting with my friends. This is where I spend all my time to, to be honest. You can click and copy my discord tag below and add me as a friend. </p>                    
-                        </div>   
-                          <div class="padding-sm"></div>    
-                        <div class="contacts-container">
-                          <h1 class="title_text-rev font--montserrat" style="color: var(--ig);">Instagram</h1>
-                          <hr class="horizontal" style="width: 50%;">
-                          <div class="padding-sm"></div>
-                          <p class="subtext-title-rev font--quicksand">I post my pictures of my daily life and other things in my instagram. You need to be a friend of my account to view my pictures. You can visit my IG using the button below.</p>   
-                        </div> 
-                      </div>
-                      <div class="padding"></div>
-                      <div class="links-wrapper">
-                          <div class="link-container"><button class="link_button" onclick="window.location='https://www.facebook.com/matterron23/'">Facebook</button></div>
-                            <div class="padding-sm "></div>
-                          <div class="link-container"><button class="link_button" onclick="prompt('Ctrl + C to copy my discord tag below.','Liqht#8961')">Discord</button></div>
-                            <div class="padding-sm "></div>
-                          <div class="link-container"><button class="link_button" onclick="window.location='https://www.instagram.com/matt.chill_/'">Instagram</button></div>
-                      </div>            
-                    </div>
-                    <div class="padding"></div>
                   </div>
                 </a>
                 <a name="about">
@@ -229,8 +158,33 @@
                     </div>
                 </a>
             </page>
+           
             <script src="js/main.js" defer></script>
-            <script src="js/preloader.js" defer></script>
+            <script>
+              const intersectionCallback = (entries) => {
+                for (const entry of entries) { // Loop over all elements that either enter or exit the view.
+                  if (entry.isIntersecting) { // This is true when the element is in view.
+                    entry.target.classList.add('animate__fadeInUp'); // Add a class.
+                  }
+                }
+              }
+
+              /**
+               * Create a observer and use the instersectionCallback as 
+               * the instructions for what to do when an element enters
+               * or leaves the view
+               */
+              const observer = new IntersectionObserver(intersectionCallback);
+
+              /**
+               * Get all .item elements and loop over them.
+               * Observe each individual item.
+               */
+              const items = document.querySelectorAll('.anim1');
+              for (const item of items) {
+                observer.observe(item);
+              }
+              </script>
         </grid-display>
     </body>
 </html>

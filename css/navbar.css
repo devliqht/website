@@ -1,36 +1,33 @@
 /* ------------------ */
 .navbar-flex {
     display: flex;
-    flex-direction: row-reverse;
-    height: 62px;
+    flex-direction: row;
+    height: 92px;
     width: 100%;
-    background: var(--lighter);
-    position: fixed;
     transition: 0.3s;
     overflow-x: hidden;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     z-index: 4;
-    border-bottom: 3px solid var(--light);
     justify-content: center;
-} 
+}
 .navbar-flex::-webkit-scrollbar {
     display: none;
-} 
+}
 .navbar-flex > a {
-    color: var(--dark);
-    text-decoration: none; 
+    color: var(--light);
+    text-decoration: none;
     display: inline-block;
     position: relative;
-    margin-top: 18px;
-    font-size: 19px;
+    margin-top: 33px;
+    font-size: 18px;
     font-style: bold;
-    letter-spacing: -0.02em;
+    text-shadow: 2px 2px #212121;
 }
 .navbar-flex > .right-margin {
     margin-right: 45px;
 }
-.navbar-flex > a:after {    
+.navbar-flex > a:after {
     content: "";
     display: block;
     height: 2px;
@@ -40,12 +37,12 @@
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
-.navbar-flex > a:hover:after { 
-    width: 100%; 
-    left: 0; 
+.navbar-flex > a:hover:after {
+    width: 100%;
+    left: 0;
 }
-.navbar-flex > .responsive_sidebar_icon { 
-    color: var(--dark);
+.navbar-flex > .responsive_sidebar_icon {
+    color: var(--light);
     position: relative;
     bottom: 2px;
 }
@@ -60,7 +57,6 @@
 }
 /* ------------------ */
 
-
 /* ------------------ */
 .sidebar-flex {
     display: flex;
@@ -72,35 +68,34 @@
     transition: 0.5s;
     overflow-x: hidden;
     padding-top: 65px;
-    z-index: 5; 
+    z-index: 5;
 }
 .sidebar-flex > a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #383F4C;
+    color: #383f4c;
     transition: 0.3s;
-    border: 2px #DBDBDB;
-    background: #E5E5E5;
+    border: 2px #dbdbdb;
+    background: #e5e5e5;
     border-bottom-style: solid;
-} 
+}
 .sidebar-flex > a:hover {
-    background: #9EA4AF;
-} 
+    background: #9ea4af;
+}
 .sidebar-flex .closebtn {
     position: absolute;
     top: 10;
     right: 25px;
     margin-left: 50px;
     transition: 0.3s;
-} 
+}
 .sidebar-flex .closebtn:hover {
     transform: rotate(90deg);
-} 
-.sidebar_header { 
+}
+.sidebar_header {
     width: 100%;
-    background: #393B40;
+    background: #393b40;
     height: 100%;
 }
 /* ------------------ */
-

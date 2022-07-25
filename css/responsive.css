@@ -6,46 +6,46 @@
         grid-template-columns: 0fr 1fr;
         grid-template-rows: 0fr 2fr 2fr 2fr 2fr 2fr 1fr;
         grid-template-areas:
-        "sidebar header"
-        "sidebar page"
-        "sidebar page"
-        "sidebar page"
-        "sidebar page"
-        "sidebar page"
-        "sidebar page";
+            "sidebar header"
+            "sidebar page"
+            "sidebar page"
+            "sidebar page"
+            "sidebar page"
+            "sidebar page"
+            "sidebar page";
         width: 100vw;
         height: 100vh;
     }
 
     /* ------------------ */
+    .padding-sm-reverse {
+        padding: 10px;
+    }
     .navbar-flex {
         padding-top: 17px;
         flex-direction: row;
         justify-content: left;
+        position: fixed;
     }
     .navbar-flex > a {
         display: none;
     }
     .navbar-flex > .responsive_sidebar_icon {
-
     }
     .dbtc {
         display: none;
     }
     /* ------------------ */
 
-    
     /* ------------------ */
-    .firstpart {
-        height: 300px;
-    }
+
     .intro {
         flex-direction: column;
         top: 42%;
-    } 
-    .intro > .intro_text   {
-        font-size: 29px;
-    } 
+    }
+    .intro > .intro_text {
+        font-size: 45px;
+    }
     .other_half {
         display: none;
     }
@@ -54,13 +54,14 @@
     }
     /* ------------------ */
 
-
     /* ------------------ */
     .details_wrapper {
         flex-direction: column;
         padding: 55px 25px 55px 7px;
     }
-    .details_0, .details_1, .details_2 {
+    .details_0,
+    .details_1,
+    .details_2 {
         padding-left: 1em;
         min-width: 1px;
     }
@@ -68,7 +69,6 @@
         min-width: 350px;
     }
     /* ------------------ */
-
 
     /* ------------------ */
     .contacts_wrapper {
@@ -84,7 +84,6 @@
     }
     /* ------------------ */
 
-
     /* ------------------ */
     button {
         font-size: 0.6em;
@@ -97,16 +96,14 @@
     }
     /* ------------------ */
 
-
-
     .disappear {
-        display:none;
+        display: none;
     }
     .about_section {
         height: 340px;
     }
 
-    input[type=text] {
+    input[type="text"] {
         display: none;
     }
 }
@@ -124,7 +121,7 @@
     }
 
     ::-webkit-scrollbar-track {
-        background: #181818; 
+        background: #181818;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -132,7 +129,4 @@
         border-radius: 15px;
     }
     /* ------------------ */
-
 }
-
-
