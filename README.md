@@ -1,2 +1,2 @@
-# Calasanz Q4 Portfolio Website
-### The website for my school project.
+# My Portfolio
+### Initially the website for my school project. I've now decided to continue working on this to make this my not-so-for-professional portfolio, just for fun. 
