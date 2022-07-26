@@ -1,0 +1,72 @@
+p {
+    color: #b3b3b3;
+    font-weight: 300;
+}
+
+a {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+.table-responsive {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+.custom-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.custom-table {
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+.custom-table thead tr,
+.custom-table thead th {
+    border-top: none;
+    border-bottom: none !important;
+    text-align: left;
+    padding-right: 20px;
+}
+.custom-table tbody th,
+.custom-table tbody td {
+    color: #777;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 300;
+    border: none;
+}
+.custom-table tbody th small,
+.custom-table tbody td small {
+    color: #b3b3b3;
+    font-weight: 300;
+}
+.custom-table tbody tr {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.custom-table tbody tr:hover,
+.custom-table tbody tr:focus {
+    /*background: rgb(236, 236, 236);*/
+}
+
+.custom-table .td-box-wrap {
+    padding: 0;
+}
+.custom-table .box {
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.custom-table .box td,
+.custom-table .box th {
+    border: none !important;
+}

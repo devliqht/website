@@ -93,3 +93,16 @@
                                   </div>
                                 </div>                
                         </div>  
+
+                            ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #181818;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 15px;
+    }

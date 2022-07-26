@@ -240,3 +240,13 @@ i:hover {
     height: 100%;
     width: 100%;
 }
+
+.headingtext {
+    font-size: 48px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.table-font-size {
+    font-size: 20px;
+}
