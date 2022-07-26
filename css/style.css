@@ -14,8 +14,8 @@ a:hover {
 }
 
 .table-responsive {
-    margin-left: 22px;
-    margin-right: 22px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 .custom-table {
     margin-left: auto;
@@ -23,7 +23,7 @@ a:hover {
 }
 
 table.custom-table {
-    border-spacing: 20px;
+    border-spacing: 3vw 0px;
     border-collapse: separate;
 }
 .custom-table thead tr,
