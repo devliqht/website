@@ -27,6 +27,13 @@
     .table-font-size {
         font-size: 16px !important;
     }
+    .games-image-wrapper {
+        flex-direction: column !important;
+    }
+    .image {
+        margin-right: auto;
+        margin-left: auto;
+    }
     .navbar-flex {
         padding-top: 17px;
         flex-direction: row;
