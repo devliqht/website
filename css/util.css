@@ -130,6 +130,7 @@
     transition: 0.4s;
     cursor: default;
     letter-spacing: -0.02em;
+    text-align: center;
 }
 .title_text-rev {
     color: var(--dark);
