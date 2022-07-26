@@ -174,6 +174,24 @@ ul.details_ul {
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
 }
+
+.song-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.song-title h2 {
+    font-size: 21px;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.song-artist h4 {
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+}
 /* ------------------ */
 .contacts_wrapper {
     display: flex;
