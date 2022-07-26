@@ -149,45 +149,7 @@
 /* ------------------ */
 
 /* ------------------ */
-button {
-    font-size: 1em;
-    background: var(--hgradient);
-    color: #fff;
-    border: white;
-    padding: 0.85em 0.75em;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    font-family: "Montserrat";
-    width: 220px;
-}
-button:hover {
-    color: #333;
-}
-button::after {
-    content: "";
-    background: #ecf0f1;
-    position: absolute;
-    z-index: -1;
-    padding: 0.85em 0.75em;
-    display: block;
-}
-button[class^="link"]::after {
-    transition: all 0.5s ease;
-}
-button[class^="link"]:hover::after {
-    transition: all 0.5s ease-out;
-}
-button.link_button::after {
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-30deg) scale(0, 1);
-}
-button.link_button:hover::after {
-    transform: skewX(-30deg) scale(1, 1);
-}
+
 /* ------------------ */
 
 /* ------------------ */
@@ -315,6 +277,57 @@ i:hover {
 .games-image-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS */
+.button-6 {
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+    transform: translateY(-1px);
+}
+
+.button-6:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.standard-wrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
 }

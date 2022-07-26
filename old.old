@@ -94,3 +94,42 @@
                                 </div>                
                         </div>  
 
+button {
+    font-size: 1em;
+    background: var(--hgradient);
+    color: #fff;
+    border: white;
+    padding: 0.85em 0.75em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-family: "Montserrat";
+    width: 220px;
+}
+button:hover {
+    color: #333;
+}
+button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+button[class^="link"]::after {
+    transition: all 0.5s ease;
+}
+button[class^="link"]:hover::after {
+    transition: all 0.5s ease-out;
+}
+button.link_button::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-30deg) scale(0, 1);
+}
+button.link_button:hover::after {
+    transform: skewX(-30deg) scale(1, 1);
+}
