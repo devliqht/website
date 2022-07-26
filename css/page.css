@@ -119,6 +119,61 @@ ul.details_ul {
 }
 /* ------------------ */
 
+.ta-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ta-entry {
+    background-color: var(--dark);
+    border-radius: 6px;
+    box-shadow: 1.7px 1.7px 1.2px rgba(0, 0, 0, 0.12),
+        3.9px 3.9px 2.7px rgba(0, 0, 0, 0.093),
+        6.7px 6.7px 4.6px rgba(0, 0, 0, 0.081),
+        10.3px 10.3px 7.1px rgba(0, 0, 0, 0.072),
+        15.2px 15.2px 10.5px rgba(0, 0, 0, 0.064),
+        22.3px 22.3px 15.4px rgba(0, 0, 0, 0.056),
+        33.5px 33.5px 23.1px rgba(0, 0, 0, 0.048),
+        53.4px 53.4px 36.8px rgba(0, 0, 0, 0.039),
+        100px 100px 69px rgba(0, 0, 0, 0.027);
+    -webkit-box-shadow: 1.7px 1.7px 1.2px rgba(0, 0, 0, 0.12),
+        3.9px 3.9px 2.7px rgba(0, 0, 0, 0.093),
+        6.7px 6.7px 4.6px rgba(0, 0, 0, 0.081),
+        10.3px 10.3px 7.1px rgba(0, 0, 0, 0.072),
+        15.2px 15.2px 10.5px rgba(0, 0, 0, 0.064),
+        22.3px 22.3px 15.4px rgba(0, 0, 0, 0.056),
+        33.5px 33.5px 23.1px rgba(0, 0, 0, 0.048),
+        53.4px 53.4px 36.8px rgba(0, 0, 0, 0.039),
+        100px 100px 69px rgba(0, 0, 0, 0.027);
+    width: fit-content;
+}
+.ta-entry:hover {
+    background-color: #3f3f3f;
+}
+
+.ta-img img {
+    border-radius: 50%;
+    padding: 25px;
+    width: 260px;
+}
+
+.ta-entry-artist-name {
+    color: var(--light);
+    font-family: "Lexend", sans-serif;
+}
+
+.ta-entry-artist-name,
+.ta-entry-artist {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ta-entry-artist h3 {
+    color: rgb(189, 189, 189);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+}
 /* ------------------ */
 .contacts_wrapper {
     display: flex;

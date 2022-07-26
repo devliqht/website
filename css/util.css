@@ -234,7 +234,7 @@ i:hover {
     top: 0;
 }
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 60s linear infinite;
     display: flex;
     width: calc(250px * 14);
 }
@@ -255,7 +255,7 @@ i:hover {
 
 .image {
     position: relative;
-    width: 400px;
+    width: 416px;
 }
 
 .image__img {
@@ -316,4 +316,5 @@ i:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
