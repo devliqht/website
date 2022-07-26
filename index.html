@@ -85,8 +85,6 @@
                   <i class="fas fa-bars fa-2x responsive_sidebar_icon" onclick="open_sidebar();"></i>
                       <a href=#firstpart class="hoverable font--josefin" id="topnav">HOME</a>
                         <div class="right-margin disappear"></div>
-                      <a class="hoverable font--josefin" id="topnav" href="https://github.com/mattportfolio/website">GITHUB</a> 
-                        <div class="right-margin disappear"></div>  
                       <a href=#details class="hoverable font--josefin" id="topnav">DETAILS</a>
                         <div class="right-margin disappear"></div>                   
                       <a href=#kpop class="hoverable font--josefin" id="topnav">ARTISTS</a> 
@@ -97,6 +95,7 @@
                         <div class="right-margin disappear"></div> 
                       <a href=#about class="hoverable font--josefin" id="topnav">ABOUT</a>
                         <div class="right-margin disappear"></div>
+                      <a class="hoverable font--josefin" id="topnav" href="https://github.com/mattportfolio/website">GITHUB</a> 
 
                       
 
@@ -123,10 +122,13 @@
                     <div class="intro">
                         <div class="intro_text">
                             <h1 class="font--montserrat anim1" style="text-shadow: 2px 2px #212121;">Matt <div class="other_half">Cabarrubias</div></h1>
-                            <i class="fab fa-facebook-square fa-xs" onclick="window.location='https://www.facebook.com/matterron23/'"></i>
-                            <i class="fab fa-discord fa-xs" onclick="prompt('Ctrl + C to copy my discord tag below.','L1ght#3031')"></i>
-                            <i class="fab fa-instagram fa-xs" onclick="window.location='https://www.instagram.com/matt.chill_/'"></i>
-                            <i class="fab fa-github fa-xs" onclick="window.location='https://github.com/mattportfolio/website'"></i>
+                            <i class="fab fa-facebook-square fa-xs" onclick=" window.open('https://www.facebook.com/matterron23/','_blank') "></i>
+                            <i class="fab fa-instagram fa-xs" onclick=" window.open('https://www.instagram.com/matt.chill_/','_blank') "></i>
+                            <i class="fab fa-tiktok fa-xs" onclick=" window.open('https://www.tiktok.com/@mattislight','_blank') "></i>
+                            <i class="fab fa-spotify fa-xs" onclick=" window.open('https://open.spotify.com/user/22ang4fynfno4z6vtdntwupxy?si=7f99577018cc49fb','_blank') "></i>
+                            <i class="fab fa-discord fa-xs" onclick="prompt('Copy my discord tag below.','L1ght#3031')"></i>
+                            <i class="fab fa-github fa-xs" onclick=" window.open('https://github.com/mattportfolio/website','_blank') "></i>
+                            <i class="fab fa-twitch fa-xs" onclick=" window.open('https://www.twitch.tv/xflqshlight','_blank') "></i>
                         </div>
                     </div>             
                   </div>
@@ -135,8 +137,15 @@
                     <div class="details_section">
                     <div class="details_wrapper center_content">
                       <div class="details_0">
-                        <img class="details_img" src="assets/temp.jpg">
-
+                        <style>
+                          .img-class-wrapper {
+                            display: flex;
+                            justify-content: center;
+                          }
+                        </style>
+                        <div class="img-class-wrapper">
+                          <img class="details_img" src="assets/temp.jpg">
+                        </div>
                       </div>
                     <div class="padding-xlg"></div>
                       <div class="details_1">
@@ -211,7 +220,7 @@
                 </a>
                 <a name="songs">
                   <div class="details_section" style="background-color: var(--lighter);">
-                    <div class="padding-xxlg"></div>
+                    <div class="padding-xlg"></div>
                     <h1 class="animate__animated font--josefin headingtext" style="text-align:center;">My all-time top songs, according to spotify</h1>
                     <div class="padding-lg"></div>
                     <div class="container">
@@ -347,6 +356,11 @@
                             <p class="image__description">
                                 57
                             </p>
+                            <div class="padding-lg"></div>
+                            <div class="image__title">Server</div>
+                            <p class="image__description">
+                                Asia
+                            </p>
                         </div>
                       </div>
                     </div>
@@ -354,11 +368,8 @@
                 </a>
                 <a name="contacts"> <!-- Reuse details section class because I'm lazy -->
                   <div class="details_section" style="background-color: var(--lighter);">
-                  <div class="padding"></div>
-                  <div class="contacts_wrapper"> 
-           
-                  </div>
-                  <div class="padding"></div>
+                  <div class="padding-xlg"></div>
+
                   </div>
                 </a>
                 <a name="about">
@@ -369,8 +380,11 @@
                       <div class="padding-sm"></div>
                       <span style="display: flex; justify-content: center;">
                         <i class="fab fa-facebook-square fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
-                        <i class="fab fa-discord fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
                         <i class="fab fa-instagram fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-tiktok fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-spotify fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-discord fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-twitch fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
                         <i class="fab fa-github fa-lg" style="color: var(--dark);"></i>
                       </span>
                       <div class="links-wrapper">
@@ -379,10 +393,13 @@
                             color: var(--darker); width: fit-content;
                           }
                         </style>
-                        <p class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.facebook.com/matterron23/'">Facebook</p><div class="padding-sm"></div>
+                        <p class="gradient_underline subtext-title font--quicksand" onclick=" window.open('https://www.facebook.com/matterron23/','_blank') ">Facebook</p><div class="padding-sm"></div>
+                        <p class="gradient_underline subtext-title font--quicksand" onclick=" window.open('https://www.instagram.com/matt.chill_/','_blank') ">Instagram</p><div class="padding-sm"></div>
+                        <p class="gradient_underline subtext-title font--quicksand" onclick=" window.open('https://www.tiktok.com/@mattislight/','_blank') ">Tiktok</p><div class="padding-sm"></div>
+                        <p class="gradient_underline subtext-title font--quicksand" onclick=" window.open('https://open.spotify.com/user/22ang4fynfno4z6vtdntwupxy?si=6d0b560cbb7141ca/','_blank') ">Spotify</p><div class="padding-sm"></div>
                         <p class="gradient_underline subtext-title font--quicksand" onclick="prompt('Ctrl + C to copy my discord tag below.','L1ght#3031')">Discord</p><div class="padding-sm"></div>
-                        <p class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.instagram.com/matt.chill_/'">Instagram</p><div class="padding-sm"></div>
-                        <p class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://github.com/mattportfolio/website'">Github</p><div class="padding-sm"></div>
+                        <p class="gradient_underline subtext-title font--quicksand" onclick=" window.open('https://www.twitch.tv/xflqshlight/','_blank') ">Twitch</p><div class="padding-sm"></div>
+                        <p class="gradient_underline subtext-title font--quicksand" onclick=" window.open('https://github.com/mattportfolio/website','_blank') ">Github</p><div class="padding-sm"></div>
                       </div>
                     </div>
                 </a>

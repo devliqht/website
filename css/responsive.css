@@ -29,6 +29,7 @@
     }
     .games-image-wrapper {
         flex-direction: column !important;
+        justify-content: center;
     }
     .image {
         margin-right: auto;
@@ -79,9 +80,7 @@
         min-width: 1px;
     }
     .details_img {
-        margin-left: auto;
-        margin-right: auto;
-        min-width: 350px;
+        width: 100%;
     }
     /* ------------------ */
 
@@ -115,7 +114,7 @@
         display: none;
     }
     .about_section {
-        height: 340px;
+        height: fit-content !important;
     }
 
     input[type="text"] {

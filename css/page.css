@@ -115,6 +115,7 @@ ul.details_ul {
 
 .details_img {
     position: relative;
+    object-fit: cover;
 }
 /* ------------------ */
 
