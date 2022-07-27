@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="css/util.css">
         <link rel="stylesheet" href="css/darkmodeswitch.css">
         <link rel="stylesheet" href="css/keyframes.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/style.css">
         <!----------------------------->
 
@@ -43,7 +42,7 @@
     </head>
     <body>
       <style>
-        #myVideo {
+        #bg-video {
           position: fixed;
           right: 0;
           bottom: 0;
@@ -53,9 +52,8 @@
           filter: blur(3px) opacity(50%);
         }
       </style>
-      <video autoplay muted loop id="myVideo">
+      <video autoplay muted loop id="bg-video">
         <source src="bg.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
       </video>
       <!-- A preloader is needed because if we refresh with our current 'dark mode' theme it's not smooth-->
       <!-- <div class="preloader" id="preload">
@@ -89,9 +87,6 @@
                       <a href=#about class="hoverable font--josefin" id="topnav">ABOUT</a>
                         <div class="right-margin disappear"></div>
                       <a class="hoverable font--josefin" id="topnav" href="https://github.com/mattportfolio/website">GITHUB</a> 
-
-                      
-
                     <!-- <div class="theme-switch-wrapper">
                       <label class="theme-switch" for="opt_color">
                           <input type="checkbox" id="opt_color" onclick="opt_color();"/>
@@ -622,8 +617,8 @@
                     <div class="about_section center_content" style="text-align: center;">
                       <div class="padding-md"></div>
                       <h1 class="subtext-title font--josefin" >Made by Matt Cabarrubias.</h1>
-                      <h1 class="subtext-title font--josefin" >Static, no framework website</h1>
-                      <p class="font--quicksand" style="text-align:center;">Last Updated: 7/27/2022, 8:46 pm</p>
+                      <h1 class="subtext-title font--josefin" >Static, no framework manually coded website</h1>
+                      <p class="font--quicksand" style="text-align:center;">Last Updated: 7/27/2022, 10:41 pm</p>
                       <div class="padding-sm"></div>
                       <span style="display: flex; justify-content: center;">
                         <i class="fab fa-facebook-square fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
@@ -650,10 +645,8 @@
                       </div>
                     </div>
                 </a>
-            </page>
-           
+            </page>  
             <script src="js/main.js"></script>
-            <script src="js/flickity.pkgd.min.js"></script>
             <script>
               const intersectionCallback = (entries) => {
                 for (const entry of entries) { 
