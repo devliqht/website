@@ -190,7 +190,8 @@ ul.details_ul {
     padding-left: 22px;
     padding-right: 20px;
 }
-.ta-entry-artist h3 {
+.ta-entry-artist h3,
+h4 {
     color: rgb(189, 189, 189);
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
