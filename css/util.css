@@ -292,7 +292,7 @@ i:hover {
     cursor: pointer;
     font-family: "Lexend", sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     justify-content: center;
     line-height: 1.25;
     margin: 0;
@@ -305,6 +305,7 @@ i:hover {
     touch-action: manipulation;
     vertical-align: baseline;
     width: auto;
+    margin: 3px;
 }
 
 .button-6:hover,

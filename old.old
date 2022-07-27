@@ -133,3 +133,178 @@ button.link_button::after {
 button.link_button:hover::after {
     transform: skewX(-30deg) scale(1, 1);
 }
+
+                        <table class="table custom-table font--josefin table-font-size">
+                          <thead>
+                            <tr>   
+                              <th scope="col">#</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Duration</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr scope="row"> 
+                              <td>
+                                1
+                              </td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/loveshot.jpg" style="width: 56px;" id="song-cover-1"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title" id="song-title-1"><h2>Love Shot</h2></div>
+                                    <div class="song-artist" id="song-artist-1"><h4>EXO</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:20</td>        
+                            </tr>
+                            <tr>    
+                              <td>2</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/zombie.jpg" style="width: 56px;" id="song-cover-2"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>Zombie - English Ver.</h2></div>
+                                    <div class="song-artist"><h4>DAY6</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:29</td>
+                            </tr>
+                            <tr>    
+                              <td>3</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/makeawish.jpg" style="width: 56px;" id="song-cover-3"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>Make A Wish (Birthday Song)</h2></div>
+                                    <div class="song-artist"><h4>NCT U</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:49</td>
+                            </tr>
+                            <tr>    
+                              <td>4</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/youcallingmyname.jpg" style="width: 56px;" id="song-cover-4"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>You Calling My Name</h2></div>
+                                    <div class="song-artist"><h4>GOT7</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:15</td>
+                            </tr>
+                            <tr>    
+                              <td>5</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/ghostofyou.jpg" style="width: 56px;" id="song-cover-5"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>Ghost Of You</h2></div>
+                                    <div class="song-artist"><h4>5 Seconds of Summer</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:29</td>
+                            </tr>
+                            <tr>    
+                              <td>6</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/8letters.jpg" style="width: 56px;" id="song-cover-6"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>8 Letters</h2></div>
+                                    <div class="song-artist"><h4>Why Don't We</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:10</td>
+                            </tr>
+                            <tr>    
+                              <td>7</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/lovetalk.jpg" style="width: 56px;" id="song-cover-7"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>Love Talk - English Version</h2></div>
+                                    <div class="song-artist"><h4>WayV</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:52</td>
+                            </tr>
+                            <tr>    
+                              <td>8</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/whodoulove.jpg" style="width: 56px;" id="song-cover-8"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>WHO DO U LOVE?</h2></div>
+                                    <div class="song-artist"><h4>Monsta X, French Montana</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:09</td>
+                            </tr>
+                            <tr>    
+                              <td>9</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/dynamite.jpg" style="width: 56px;" id="song-cover-9"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>Dynamite</h2></div>
+                                    <div class="song-artist"><h4>BTS</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>3:19</td>
+                            </tr>
+                            <tr>    
+                              <td>10</td>
+                              <td>
+                                <div class="song-info">
+                                  <div class="song-cover">
+                                    <img src="assets/kpop/helpherself.jpg" style="width: 56px;" id="song-cover-10"/>
+                                  </div>
+                                  <div class="padding-sm"></div>
+                                  <div class="song-details">
+                                    <div class="song-title"><h2>help herself (with BENEE)</h2></div>
+                                    <div class="song-artist"><h4>bbno$, Diamond Pistols, BENEE</h3></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>2:47</td>
+                            </tr>
+                                         
+                          </tbody>
+                        </table>

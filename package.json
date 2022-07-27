@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0",
     "viewport-checker": "^2.0.0"
   }
 }

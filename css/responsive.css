@@ -22,7 +22,7 @@
         padding: 10px;
     }
     .headingtext {
-        font-size: 28px !important;
+        font-size: 32px !important;
     }
     .table-font-size {
         font-size: 16px !important;
@@ -32,7 +32,9 @@
         padding-right: 2vw;
         padding-left: 2vw;
     }
-
+    .standard-wrapper {
+        flex-direction: column !important;
+    }
     .navbar-flex {
         padding-top: 17px;
         flex-direction: row;
@@ -51,6 +53,12 @@
         flex-direction: column;
         padding-left: 4vw;
         padding-right: 4vw;
+    }
+    .ta-img img {
+        width: 320px !important;
+    }
+    .song-title h2 {
+        font-size: 18px !important;
     }
     /* ------------------ */
 

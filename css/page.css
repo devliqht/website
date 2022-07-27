@@ -68,7 +68,7 @@ page {
     transition: 0.4s;
     height: 50%;
     cursor: default;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.05em;
 }
 .intro p {
     position: relative;
@@ -128,7 +128,7 @@ ul.details_ul {
 
 .ta-entry {
     background-color: var(--dark);
-    border-radius: 6px;
+    border-radius: 8px;
     box-shadow: 1.7px 1.7px 1.2px rgba(0, 0, 0, 0.12),
         3.9px 3.9px 2.7px rgba(0, 0, 0, 0.093),
         6.7px 6.7px 4.6px rgba(0, 0, 0, 0.081),
@@ -166,7 +166,7 @@ ul.details_ul {
 
 .ta-entry-artist-name,
 .ta-entry-artist {
-    padding-left: 20px;
+    padding-left: 22px;
     padding-right: 20px;
 }
 .ta-entry-artist h3 {
@@ -230,7 +230,7 @@ ul.details_ul {
 .about_section {
     margin: auto;
     width: 100%;
-    height: 175px;
+    height: 195px;
     background: var(--lighter);
     background-size: cover;
     min-width: 100%;

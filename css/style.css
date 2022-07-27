@@ -31,7 +31,6 @@ table.custom-table {
     border-top: none;
     border-bottom: none !important;
     text-align: left;
-    padding-right: 20px;
 }
 .custom-table tbody th,
 .custom-table tbody td {
