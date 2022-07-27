@@ -13,6 +13,10 @@ const btnAllTime = document.getElementById("btnAllTime");
 const btnLastMonth = document.getElementById("btnLastMonth");
 const btnLast6Months = document.getElementById("btnLast6Months");
 
+$(document).ready(function () {
+    changeSpotify();
+});
+
 function changeSpotify(state) {
     if (state == "AllTime") {
         console.log("Selected All Time Best Songs");
@@ -210,7 +214,3 @@ function changeSpotify(state) {
         console.log("No state selected");
     }
 }
-
-$(document).ready(function () {
-    changeSpotify();
-});
