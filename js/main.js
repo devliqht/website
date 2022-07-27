@@ -210,3 +210,7 @@ function changeSpotify(state) {
         console.log("No state selected");
     }
 }
+
+$(document).ready(function () {
+    changeSpotify();
+});
