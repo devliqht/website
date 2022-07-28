@@ -138,6 +138,13 @@ ul.details_ul {
         0px 8.5px 73.1px rgba(0, 0, 0, 0.024),
         0px 17px 146px rgba(0, 0, 0, 0.017);
 }
+.details-container:hover {
+    background: rgb(244, 244, 244);
+}
+.details-container img.details-container-img {
+    width: 300px;
+}
+
 /* ------------------ */
 
 .ta-wrapper {
